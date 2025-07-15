@@ -59,7 +59,7 @@ export function TeamSection() {
   ];
 
   return (
-    <section className="py-20 bg-gray-900">
+    <section className="py-20 bg-black">
       <div className="max-w-6xl mx-auto px-4">
         <motion.div
           className="text-center mb-16"
@@ -92,7 +92,7 @@ export function TeamSection() {
         >
           {teamMembers.map((member, index) => (
             <motion.div key={index} variants={fadeInUp}>
-              <Card className="bg-gray-800 border-temple-gold/20 h-full">
+              <Card className="bg-gray-900 border-temple-gold/20 h-full">
                 <CardHeader>
                   <CardTitle className="text-xl font-serif text-cream">
                     {member.name}
@@ -154,7 +154,7 @@ export function TeamSection() {
             {collaborators.map((collaborator, index) => (
               <motion.div
                 key={index}
-                className="bg-gray-800 border border-temple-gold/20 rounded-lg p-4 text-center hover:border-temple-gold/40 transition-colors duration-300"
+                className="bg-gray-900 border border-temple-gold/20 rounded-lg p-4 text-center hover:border-temple-gold/40 transition-colors duration-300"
                 variants={fadeInUp}
               >
                 <p className="text-cream font-medium">{collaborator}</p>

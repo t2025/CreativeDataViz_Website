@@ -34,7 +34,7 @@ export function Navigation() {
 
   return (
     <nav className={`fixed top-0 w-full z-50 transition-all duration-300 ${
-      isScrolled ? "bg-temple-brown/95 backdrop-blur-md shadow-lg" : "bg-transparent"
+      isScrolled ? "bg-black/95 backdrop-blur-md shadow-lg" : "bg-transparent"
     }`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
@@ -70,7 +70,7 @@ export function Navigation() {
 
       {/* Mobile Menu */}
       {isMenuOpen && (
-        <div className="md:hidden bg-temple-brown/95 backdrop-blur-md border-t border-temple-gold/20">
+        <div className="md:hidden bg-black/95 backdrop-blur-md border-t border-temple-gold/20">
           <div className="px-2 pt-2 pb-3 space-y-1">
             {navItems.map((item) => (
               <button

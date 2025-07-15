@@ -12,7 +12,7 @@ export function TimelineSection() {
 
   if (isLoading) {
     return (
-      <div className="py-20 bg-gray-800">
+      <div className="py-20 bg-black">
         <div className="max-w-6xl mx-auto px-4">
           <div className="text-center">
             <div className="animate-pulse">
@@ -52,7 +52,7 @@ export function TimelineSection() {
   };
 
   return (
-    <div className="py-20 bg-gray-900">
+    <div className="py-20 bg-black">
       <div className="max-w-6xl mx-auto px-4">
         <motion.div
           className="text-center mb-16"
@@ -109,7 +109,7 @@ export function TimelineSection() {
                     variants={index % 2 === 0 ? slideInLeft : slideInRight}
                   >
                     <div className={index % 2 === 0 ? '' : 'md:col-start-2'}>
-                      <Card className="bg-gray-800 border-temple-gold/20">
+                      <Card className="bg-gray-900 border-temple-gold/20">
                         <CardHeader>
                           <div className="flex items-center justify-between mb-2">
                             <Badge variant="outline" className="temple-gold border-temple-gold/50">

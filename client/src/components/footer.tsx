@@ -40,7 +40,7 @@ export function Footer() {
   ];
 
   return (
-    <footer className="bg-temple-brown border-t border-temple-gold/20">
+    <footer className="bg-black border-t border-temple-gold/20">
       <div className="max-w-6xl mx-auto px-4 py-12">
         <motion.div
           className="grid md:grid-cols-4 gap-8 mb-8"

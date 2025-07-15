@@ -16,12 +16,12 @@ export function HeroSection() {
   ];
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-temple-brown via-gray-900 to-deep-red">
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-black">
       {/* Background Pattern */}
-      <div className="absolute inset-0 opacity-10">
-        <div className="absolute top-20 left-10 w-32 h-32 bg-temple-gold rounded-full opacity-20 animate-pulse"></div>
-        <div className="absolute bottom-20 right-10 w-24 h-24 bg-warm-orange rounded-full opacity-30 animate-pulse"></div>
-        <div className="absolute top-1/2 left-1/4 w-16 h-16 bg-deep-red rounded-full opacity-25 animate-pulse"></div>
+      <div className="absolute inset-0 opacity-5">
+        <div className="absolute top-20 left-10 w-32 h-32 bg-temple-gold rounded-full opacity-10 animate-pulse"></div>
+        <div className="absolute bottom-20 right-10 w-24 h-24 bg-warm-orange rounded-full opacity-15 animate-pulse"></div>
+        <div className="absolute top-1/2 left-1/4 w-16 h-16 bg-deep-red rounded-full opacity-10 animate-pulse"></div>
       </div>
 
       {/* Floating Dance Poses */}

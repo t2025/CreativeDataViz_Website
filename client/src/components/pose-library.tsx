@@ -35,7 +35,7 @@ export function PoseLibrary() {
 
   if (isLoading) {
     return (
-      <div className="py-20 bg-gray-800">
+      <div className="py-20 bg-black">
         <div className="max-w-7xl mx-auto px-4">
           <div className="text-center mb-16">
             <div className="animate-pulse">
@@ -49,7 +49,7 @@ export function PoseLibrary() {
   }
 
   return (
-    <section className="py-20 bg-gray-800">
+    <section className="py-20 bg-black">
       <div className="max-w-7xl mx-auto px-4">
         <motion.div
           className="text-center mb-16"
@@ -117,7 +117,7 @@ export function PoseLibrary() {
                     variants={poseCardHover}
                     whileHover="whileHover"
                   >
-                    <Card className="bg-gray-700 border-temple-gold/20 hover:border-temple-gold/40 transition-colors duration-300">
+                    <Card className="bg-gray-900 border-temple-gold/20 hover:border-temple-gold/40 transition-colors duration-300">
                       <div className="relative">
                         <img
                           src={pose.imageUrl}
@@ -154,7 +154,7 @@ export function PoseLibrary() {
                   </motion.div>
                 </DialogTrigger>
                 
-                <DialogContent className="max-w-2xl bg-gray-800 border-temple-gold/20">
+                <DialogContent className="max-w-2xl bg-gray-900 border-temple-gold/20">
                   <DialogHeader>
                     <DialogTitle className="text-2xl font-serif temple-gold">
                       {pose.name}

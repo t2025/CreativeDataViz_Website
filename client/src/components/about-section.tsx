@@ -20,7 +20,7 @@ export function AboutSection() {
 
   if (isLoading) {
     return (
-      <div className="py-20 bg-gray-800">
+      <div className="py-20 bg-black">
         <div className="max-w-6xl mx-auto px-4">
           <div className="animate-pulse">
             <div className="h-8 bg-temple-gold/20 rounded w-64 mx-auto mb-4"></div>
@@ -32,7 +32,7 @@ export function AboutSection() {
   }
 
   return (
-    <section id="about" className="py-20 bg-gray-800">
+    <section id="about" className="py-20 bg-black">
       <div className="max-w-6xl mx-auto px-4">
         <motion.div
           className="text-center mb-16"
@@ -178,7 +178,7 @@ export function AboutSection() {
             >
               {culturalElements.map((element, index) => (
                 <motion.div key={element.id} variants={fadeInUp}>
-                  <Card className="bg-gray-700 border-temple-gold/20 h-full">
+                  <Card className="bg-gray-900 border-temple-gold/20 h-full">
                     <CardHeader>
                       <div className="flex items-center justify-between mb-2">
                         <Badge variant="outline" className="temple-gold border-temple-gold/50 capitalize">
