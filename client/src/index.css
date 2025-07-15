@@ -1,0 +1,156 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: hsl(0, 0%, 100%);
+  --foreground: hsl(20, 14.3%, 4.1%);
+  --muted: hsl(60, 4.8%, 95.9%);
+  --muted-foreground: hsl(25, 5.3%, 44.7%);
+  --popover: hsl(0, 0%, 100%);
+  --popover-foreground: hsl(20, 14.3%, 4.1%);
+  --card: hsl(0, 0%, 100%);
+  --card-foreground: hsl(20, 14.3%, 4.1%);
+  --border: hsl(20, 5.9%, 90%);
+  --input: hsl(20, 5.9%, 90%);
+  --primary: hsl(43, 74%, 49%);
+  --primary-foreground: hsl(20, 14.3%, 4.1%);
+  --secondary: hsl(60, 4.8%, 95.9%);
+  --secondary-foreground: hsl(24, 9.8%, 10%);
+  --accent: hsl(60, 4.8%, 95.9%);
+  --accent-foreground: hsl(24, 9.8%, 10%);
+  --destructive: hsl(0, 84.2%, 60.2%);
+  --destructive-foreground: hsl(60, 9.1%, 97.8%);
+  --ring: hsl(20, 14.3%, 4.1%);
+  --radius: 0.5rem;
+  
+  /* Cultural color palette */
+  --temple-gold: hsl(43, 74%, 49%);
+  --deep-red: hsl(0, 100%, 27%);
+  --temple-brown: hsl(20, 50%, 15%);
+  --cream: hsl(60, 29%, 94%);
+  --warm-orange: hsl(14, 100%, 60%);
+  --forest-green: hsl(120, 61%, 34%);
+  --royal-purple: hsl(270, 50%, 40%);
+  --earth-brown: hsl(30, 40%, 25%);
+}
+
+.dark {
+  --background: hsl(20, 50%, 15%);
+  --foreground: hsl(60, 29%, 94%);
+  --muted: hsl(20, 30%, 25%);
+  --muted-foreground: hsl(60, 5%, 64.9%);
+  --popover: hsl(20, 50%, 15%);
+  --popover-foreground: hsl(60, 29%, 94%);
+  --card: hsl(20, 50%, 15%);
+  --card-foreground: hsl(60, 29%, 94%);
+  --border: hsl(20, 30%, 25%);
+  --input: hsl(20, 30%, 25%);
+  --primary: hsl(43, 74%, 49%);
+  --primary-foreground: hsl(20, 14.3%, 4.1%);
+  --secondary: hsl(20, 30%, 25%);
+  --secondary-foreground: hsl(60, 29%, 94%);
+  --accent: hsl(20, 30%, 25%);
+  --accent-foreground: hsl(60, 29%, 94%);
+  --destructive: hsl(0, 62.8%, 30.6%);
+  --destructive-foreground: hsl(60, 29%, 94%);
+  --ring: hsl(43, 74%, 49%);
+  --radius: 0.5rem;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply font-sans antialiased bg-background text-foreground;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer utilities {
+  .temple-gold {
+    color: var(--temple-gold);
+  }
+  
+  .bg-temple-gold {
+    background-color: var(--temple-gold);
+  }
+  
+  .deep-red {
+    color: var(--deep-red);
+  }
+  
+  .bg-deep-red {
+    background-color: var(--deep-red);
+  }
+  
+  .temple-brown {
+    color: var(--temple-brown);
+  }
+  
+  .bg-temple-brown {
+    background-color: var(--temple-brown);
+  }
+  
+  .warm-orange {
+    color: var(--warm-orange);
+  }
+  
+  .bg-warm-orange {
+    background-color: var(--warm-orange);
+  }
+  
+  .gradient-text {
+    background: linear-gradient(135deg, var(--temple-gold), var(--warm-orange));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  
+  .parallax-bg {
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .fade-in {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+  }
+  
+  .fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .pose-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .pose-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+  }
+  
+  .timeline-dot {
+    position: relative;
+  }
+  
+  .timeline-dot::after {
+    content: '';
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    background: var(--temple-gold);
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
