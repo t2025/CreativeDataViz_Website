@@ -46,169 +46,137 @@ export class MemStorage implements IStorage {
     // Timeline Events
     const timelineData: InsertTimelineEvent[] = [
       {
-        year: 1000,
+        year: 500,
         era: "past",
         title: "Origins in Temple Worship",
         description: "Bharatanatyam emerged from the sacred halls of South Indian temples, where devadasis (temple dancers) performed as offerings to the divine.",
-        imageUrl: "https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
+        imageUrl: "./src/images/bharatnatyam_temple_2.jpg",
         significance: "Established the spiritual foundation and sacred geometry of classical Indian dance",
-        innovations: ["Sacred mudras development", "Temple architecture integration", "Ritualistic choreography"],
-        keyFigures: ["Ancient temple dancers", "Sage Bharata", "Tamil poets"]
+        // innovations: ["Sacred mudras development", "Temple architecture integration", "Ritualistic choreography"],
+        // keyFigures: ["Ancient temple dancers", "Sage Bharata", "Tamil poets"]
       },
       {
-        year: 1930,
+        year: 1940,
         era: "past",
         title: "Revival Movement",
         description: "Rukmini Devi Arundale's revolutionary efforts to revive and refine Bharatanatyam, transforming it from temple tradition to concert stage.",
-        imageUrl: "https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
+        imageUrl: "./src/images/bharatnatyam_revival.avif",
         significance: "Brought respectability and artistic recognition to the dance form",
-        innovations: ["Costume standardization", "Concert format development", "International exposure"],
-        keyFigures: ["Rukmini Devi Arundale", "Balasaraswati", "Kamala Lachhman"]
+        // innovations: ["Costume standardization", "Concert format development", "International exposure"],
+        // keyFigures: ["Rukmini Devi Arundale", "Balasaraswati", "Kamala Lachhman"]
       },
+      // {
+      //   year: 2000,
+      //   era: "present",
+      //   title: "Global Recognition",
+      //   description: "Bharatanatyam achieves worldwide recognition as premier classical dance form, with practitioners and academies established globally.",
+      //   imageUrl: "./src/images/bharatnatyam_4.webp",
+      //   significance: "Established as a global cultural ambassador for Indian heritage",
+      //   // innovations: ["International academies", "Cultural diplomacy", "Cross-cultural collaborations"],
+      //   // keyFigures: ["Alarmel Valli", "Leela Samson", "Shobana Chandrakumar"]
+      // },
       {
-        year: 2000,
+        year: 2025,
         era: "present",
-        title: "Global Recognition",
-        description: "Bharatanatyam achieves worldwide recognition as premier classical dance form, with practitioners and academies established globally.",
-        imageUrl: "https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
-        significance: "Established as a global cultural ambassador for Indian heritage",
-        innovations: ["International academies", "Cultural diplomacy", "Cross-cultural collaborations"],
-        keyFigures: ["Alarmel Valli", "Leela Samson", "Shobana Chandrakumar"]
-      },
-      {
-        year: 2024,
-        era: "future",
         title: "Digital Heritage Platform",
         description: "Revolutionary AI-powered platform for preserving, teaching, and evolving Bharatanatyam through interactive digital experiences.",
-        imageUrl: "https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
+        imageUrl: "./src/images/bharatnatyam_future.png",
         significance: "Bridging ancient wisdom with cutting-edge technology for future generations",
-        innovations: ["AI choreography assistance", "Virtual reality training", "Digital pose recognition"],
-        keyFigures: ["Contemporary innovators", "Tech artists", "Cultural preservationists"]
+        // innovations: ["AI choreography assistance", "Virtual reality training", "Digital pose recognition"],
+        // keyFigures: ["Contemporary innovators", "Tech artists", "Cultural preservationists"]
       }
     ];
 
     // Dance Poses
-    const poseData: InsertDancePose[] = [
-      {
-        name: "Namaskaram",
-        description: "The traditional greeting pose, with palms joined in prayer position",
-        category: "fundamental",
-        poseNumber: 1,
-        imageUrl: "https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=600",
-        symbolism: "Reverence to the divine and respect for tradition",
-        difficulty: 1,
-        bodyParts: ["hands", "arms", "torso"],
-        mudraType: "Anjali"
-      },
+  const poseData: InsertDancePose[] = [
+  {
+    name: "Namaskaram",
+    description: "The traditional greeting pose, with palms joined in prayer position",
+    imageUrl: "./src/images/namaskaram.webp",
+    symbolism: "Reverence to the divine and respect for tradition",
+    mudraType: "Anjali"
+  },
       {
         name: "Araimandi",
         description: "The fundamental half-sitting position, foundation of all Bharatanatyam poses",
-        category: "fundamental",
-        poseNumber: 2,
-        imageUrl: "https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=600",
+        imageUrl: "./src/images/araimindi.webp",
         symbolism: "Stability and grounding in classical technique",
-        difficulty: 2,
-        bodyParts: ["legs", "hips", "spine"],
         mudraType: "Pataka"
       },
       {
         name: "Tribhanga",
         description: "The graceful three-bend posture representing the cosmic dance",
-        category: "intermediate",
-        poseNumber: 3,
         imageUrl: "https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=600",
         symbolism: "Divine grace and cosmic harmony",
-        difficulty: 3,
-        bodyParts: ["neck", "torso", "hips"],
         mudraType: "Alapadma"
       },
       {
         name: "Bharatanatyam Hasta",
         description: "Classical hand gesture expressing various emotions and stories",
-        category: "fundamental",
-        poseNumber: 4,
         imageUrl: "https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=600",
         symbolism: "Communication through divine language of hands",
-        difficulty: 2,
-        bodyParts: ["hands", "fingers", "wrists"],
         mudraType: "Hamsa"
       },
       {
         name: "Utplavana",
         description: "Dynamic jumping movement with precise landing in araimandi",
-        category: "advanced",
-        poseNumber: 5,
         imageUrl: "https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=600",
         symbolism: "Liberation and transcendence of earthly bounds",
-        difficulty: 5,
-        bodyParts: ["legs", "feet", "core"],
         mudraType: "Tripataka"
       },
       {
         name: "Chakkars",
         description: "Spinning movements that demonstrate control and grace",
-        category: "advanced",
-        poseNumber: 6,
         imageUrl: "https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=600",
         symbolism: "Cosmic cycles and eternal movement",
-        difficulty: 4,
-        bodyParts: ["full body", "balance", "coordination"],
         mudraType: "Kartarimukha"
       },
       {
         name: "Bhramari",
-        description: "Bee-like movements with intricate footwork patterns",
-        category: "intermediate",
-        poseNumber: 7,
+        description: "Bee-like movements with intricate hand gestures",
         imageUrl: "https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=600",
         symbolism: "Connection with nature and divine nectar",
-        difficulty: 3,
-        bodyParts: ["feet", "ankles", "rhythm"],
         mudraType: "Bhramara"
       },
       {
         name: "Natanam Adinar",
         description: "The iconic pose depicting Lord Shiva as the cosmic dancer",
-        category: "advanced",
-        poseNumber: 8,
         imageUrl: "https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=600",
         symbolism: "Universal creation, preservation, and destruction",
-        difficulty: 5,
-        bodyParts: ["full body", "expression", "spiritual"],
         mudraType: "Abhaya"
       }
     ];
 
     // Cultural Elements
     const culturalData: InsertCulturalElement[] = [
-      {
-        name: "Bharatanatyam Costume",
-        type: "costume",
-        description: "Traditional silk saree with intricate pleats and temple jewelry",
-        origin: "South Indian temple traditions",
-        significance: "Represents the divine feminine and cultural heritage",
-        modernAdaptation: "Contemporary cuts while maintaining traditional essence",
-        imageUrl: "https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=600"
-      },
-      {
-        name: "Carnatic Music",
-        type: "music",
-        description: "Traditional South Indian classical music accompanying dance",
-        origin: "Ancient Tamil and Sanskrit compositions",
-        significance: "Provides rhythmic and melodic foundation for expression",
-        modernAdaptation: "Fusion with contemporary instruments and compositions",
-        imageUrl: "https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=600"
-      },
-      {
-        name: "Temple Architecture",
-        type: "temple",
-        description: "Sacred geometric spaces where Bharatanatyam originated",
-        origin: "Dravidian architectural traditions",
-        significance: "Provides spatial and spiritual context for dance",
-        modernAdaptation: "Contemporary stage design inspired by temple aesthetics",
-        imageUrl: "https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=600"
-      }
-    ];
+  {
+    "name": "Bharatanatyam Pose Geometry",
+    "type": "geometry",
+    "description": "Canonical postures defined by angular placement of limbs and symmetric body alignments",
+    "origin": "Natya Shastra and temple sculpture poses",
+    "significance": "Encodes meaning through structured joint articulation and balance",
+    "modernAdaptation": "Digitized using motion capture and SMPL-X skeletal modeling",
+    "imageUrl": "./src/images/bharatnatyam_geometry.avif"
+  },
+  {
+    "name": "Mudra Hand Configurations",
+    "type": "gesture",
+    "description": "Hand gestures with defined finger positions representing symbolic meaning",
+    "origin": "Classical dance treatises and iconography",
+    "significance": "Expresses narrative elements through geometric precision of fingers",
+    "modernAdaptation": "Mapped to 3D hand skeletons (MANO) for real-time synthesis",
+    "imageUrl": "./src/images/bharatnatyam_mudra.jpg"
+  },
+  {
+    "name": "Symmetry in Bharatanatyam",
+    "type": "aesthetic-principle",
+    "description": "Use of bilateral symmetry and axis-based alignment in choreography",
+    "origin": "Temple sculpture and spiritual mandala structures",
+    "significance": "Creates visual harmony and geometric balance in motion",
+    "modernAdaptation": "Analyzed using AI pose graphs and rendered as motion skeletons",
+    "imageUrl": "./src/images/bharatnatyam_symmetry.jpg"
+  }
+];
 
     // Seed the data
     timelineData.forEach(event => {

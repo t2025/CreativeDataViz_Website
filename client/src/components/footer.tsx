@@ -40,7 +40,7 @@ export function Footer() {
   ];
 
   return (
-    <footer className="bg-black border-t border-temple-gold/20">
+    <footer className="bg-white border-t border-temple-gold/20">
       <div className="max-w-6xl mx-auto px-4 py-12">
         <motion.div
           className="grid md:grid-cols-4 gap-8 mb-8"
@@ -126,7 +126,7 @@ export function Footer() {
         >
           <div className="flex flex-col md:flex-row justify-between items-center text-sm text-gray-400">
             <p>
-              © 2024 Bharatanatyam Heritage Digital Platform. Cultural preservation through technological innovation.
+              © 2025 Bharatanatyam Heritage Digital Platform. Cultural preservation through technological innovation.
             </p>
             <div className="flex gap-4 mt-4 md:mt-0">
               <a href="#" className="hover:text-temple-gold transition-colors duration-200">

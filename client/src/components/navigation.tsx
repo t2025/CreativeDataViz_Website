@@ -34,15 +34,15 @@ export function Navigation() {
 
   return (
     <nav className={`fixed top-0 w-full z-50 transition-all duration-300 ${
-      isScrolled ? "bg-black/95 backdrop-blur-md shadow-lg" : "bg-black/80 backdrop-blur-sm"
+      isScrolled ? "bg-white/95 backdrop-blur-md shadow-lg" : "bg-white/80 backdrop-blur-sm"
     }`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <div className="flex items-center space-x-2">
-            <h1 className="text-2xl font-serif font-bold gradient-text">
-              Bharatanatyam
-            </h1>
-            <span className="temple-gold text-sm">Heritage</span>
+            {/* <h1 className="text-2xl font-serif font-bold gradient-text">
+              Human 3D Modeling Lab
+            </h1> */}
+            <span className="temple-gold text-sm"></span>
           </div>
 
           <div className="hidden md:flex items-center space-x-8">
@@ -70,7 +70,7 @@ export function Navigation() {
 
       {/* Mobile Menu */}
       {isMenuOpen && (
-        <div className="md:hidden bg-black/95 backdrop-blur-md border-t border-temple-gold/20">
+        <div className="md:hidden bg-white/95 backdrop-blur-md border-t border-temple-gold/20">
           <div className="px-2 pt-2 pb-3 space-y-1">
             {navItems.map((item) => (
               <button

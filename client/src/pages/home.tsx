@@ -5,16 +5,22 @@ import { TimelineSection } from "@/components/timeline-section";
 import { PoseLibrary } from "@/components/pose-library";
 import { TeamSection } from "@/components/team-section";
 import { Footer } from "@/components/footer";
+import { CulturalElementGrid } from "@/components/cultural-components";
+import { PipelineSection } from "@/components/pipeline";
+import { AICoDanceSection } from "@/components/AICoDanceSection";
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-black">
+    <div className="min-h-screen bg-white">
       <Navigation />
-      <HeroSection />
       <AboutSection />
+      <AICoDanceSection/>
+      <PipelineSection/>
+      <HeroSection />
       <TimelineSection />
+      <CulturalElementGrid/>
       <PoseLibrary />
-      <TeamSection />
+      {/* <TeamSection /> */}
       <Footer />
     </div>
   );

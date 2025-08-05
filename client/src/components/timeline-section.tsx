@@ -12,7 +12,7 @@ export function TimelineSection() {
 
   if (isLoading) {
     return (
-      <div className="py-20 bg-black">
+      <div className="py-20 bg-white">
         <div className="max-w-6xl mx-auto px-4">
           <div className="text-center">
             <div className="animate-pulse">
@@ -35,12 +35,12 @@ export function TimelineSection() {
 
   const eraConfig = {
     past: {
-      title: "Past · Origins",
+      title: "Past · Origins and Revival",
       description: "Sacred traditions and temple heritage",
       color: "deep-red",
     },
     present: {
-      title: "Present · Revival",
+      title: "Present · Innovation",
       description: "Modern renaissance and global recognition",
       color: "temple-gold",
     },
@@ -52,7 +52,7 @@ export function TimelineSection() {
   };
 
   return (
-    <div className="py-20 bg-black">
+    <div className="py-20 bg-white">
       <div className="max-w-6xl mx-auto px-4">
         <motion.div
           className="text-center mb-16"
@@ -60,18 +60,7 @@ export function TimelineSection() {
           whileInView="animate"
           viewport={{ once: true }}
         >
-          <motion.h2
-            className="text-4xl md:text-5xl font-serif font-bold temple-gold mb-6"
-            variants={fadeInUp}
-          >
-            Journey Through Time
-          </motion.h2>
-          <motion.p
-            className="text-lg text-cream max-w-3xl mx-auto leading-relaxed"
-            variants={fadeInUp}
-          >
-            Discover the evolution of Bharatanatyam from ancient temple traditions to modern digital innovation
-          </motion.p>
+          
         </motion.div>
 
         {Object.entries(eraConfig).map(([era, config], eraIndex) => {

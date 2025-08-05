@@ -12,13 +12,9 @@ export const dancePoses = pgTable("dance_poses", {
   id: serial("id").primaryKey(),
   name: text("name").notNull(),
   description: text("description").notNull(),
-  category: text("category").notNull(), // "fundamental", "intermediate", "advanced"
-  poseNumber: integer("pose_number").notNull(),
   imageUrl: text("image_url").notNull(),
   symbolism: text("symbolism"),
-  difficulty: integer("difficulty").notNull(), // 1-5 scale
-  bodyParts: text("body_parts").array().notNull(), // ["arms", "legs", "torso", "head"]
-  mudraType: text("mudra_type"), // specific hand gesture type
+  mudraType: text("mudra_type"),
   isActive: boolean("is_active").default(true),
 });
 
@@ -49,6 +45,8 @@ export const insertUserSchema = createInsertSchema(users).pick({
   username: true,
   password: true,
 });
+
+
 
 export const insertDancePoseSchema = createInsertSchema(dancePoses).omit({
   id: true,
