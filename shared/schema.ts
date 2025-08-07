@@ -8,11 +8,13 @@ export const users = pgTable("users", {
   password: text("password").notNull(),
 });
 
+
+
 export const dancePoses = pgTable("dance_poses", {
   id: serial("id").primaryKey(),
   name: text("name").notNull(),
   description: text("description").notNull(),
-  imageUrl: text("image_url").notNull(),
+  videoUrls: text("video_urls").array().notNull(),  // <-- changed from imageUrl
   symbolism: text("symbolism"),
   mudraType: text("mudra_type"),
   isActive: boolean("is_active").default(true),

@@ -28,8 +28,10 @@ export function AICoDanceSection() {
           <div className="text-center">
             <p className="text-lg text-gray-700 mb-2 font-semibold">Human Performance</p>
             <video
-              src="./src/videos/human_dancer.mp4"
-              controls
+              src="./src/videos/realis_ref_ankitha1_smpl (1).mp4"
+              autoPlay
+              loop
+              muted
               className="w-full h-[30rem] object-cover rounded-lg shadow-md mx-auto"
             />
           </div>
@@ -38,8 +40,10 @@ export function AICoDanceSection() {
           <div className="text-center">
             <p className="text-lg text-gray-700 mb-2 font-semibold">Mesh Animation</p>
             <video
-              src="./src/videos/mesh_output.mp4"
-              controls
+              src="./src/videos/example.mp4"
+              autoPlay
+              loop
+              muted
               className="w-full h-[30rem] object-cover rounded-lg shadow-md mx-auto"
             />
           </div>
@@ -48,8 +52,10 @@ export function AICoDanceSection() {
           <div className="text-center">
             <p className="text-lg text-gray-700 mb-2 font-semibold">Our Output</p>
             <video
-              src="./src/videos/realisdance_output.mp4"
-              controls
+              src="./src/videos/ref_smpl.mp4"
+              autoPlay
+              loop
+              muted
               className="w-full h-[30rem] object-cover rounded-lg shadow-md mx-auto"
             />
           </div>

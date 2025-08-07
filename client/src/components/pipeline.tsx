@@ -16,13 +16,20 @@ export function PipelineSection() {
                 >
                     Our Pipeline
                 </motion.h2>
-                <div className="flex justify-center items-center min-h-screen">
-                    <motion.img
-                        src="./src/images/pipeline.png"
-                        alt="Pipeline visualization"
-                        className="w-[40rem] h-[60rem] object-cover rounded-lg shadow-md"
+                <div className="flex justify-center items-center min-h-screen gap-6 px-2">
+                       <motion.img
+                        src="./src/images/data_collection_stage1.png" // <-- new image
+                        alt="Additional visualization"
+                        className="w-2/3 h-full object-cover rounded-lg shadow-md"
                         variants={fadeInUp}
                     />
+                    <motion.img
+                        src="./src/images/architecture.png"
+                        alt="Pipeline visualization"
+                        className="w-2/3 h-full object-cover rounded-lg shadow-md"
+                        variants={fadeInUp}
+                    />
+                 
                 </div>
                 <motion.p
                     className="text-lg text-cream max-w-3xl mx-auto leading-relaxed"

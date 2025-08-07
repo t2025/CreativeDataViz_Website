@@ -14,8 +14,8 @@ export default {
         background: "var(--background)",
         foreground: "var(--foreground)",
         card: {
-          DEFAULT: "var(--card)",
-          foreground: "var(--card-foreground)",
+          DEFAULT: "#f5f5dc",
+          foreground: "#3b3b3b",
         },
         popover: {
           DEFAULT: "var(--popover)",
@@ -85,6 +85,8 @@ export default {
         "accordion-up": "accordion-up 0.2s ease-out",
       },
     },
+
   },
+  
   plugins: [require("tailwindcss-animate"), require("@tailwindcss/typography")],
 } satisfies Config;

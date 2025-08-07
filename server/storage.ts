@@ -80,7 +80,7 @@ export class MemStorage implements IStorage {
         era: "present",
         title: "Digital Heritage Platform",
         description: "Revolutionary AI-powered platform for preserving, teaching, and evolving Bharatanatyam through interactive digital experiences.",
-        imageUrl: "./src/images/bharatnatyam_future.png",
+        imageUrl: "./src/videos/ref_smpl.mp4",
         significance: "Bridging ancient wisdom with cutting-edge technology for future generations",
         // innovations: ["AI choreography assistance", "Virtual reality training", "Digital pose recognition"],
         // keyFigures: ["Contemporary innovators", "Tech artists", "Cultural preservationists"]
@@ -89,62 +89,47 @@ export class MemStorage implements IStorage {
 
     // Dance Poses
   const poseData: InsertDancePose[] = [
-  {
-    name: "Namaskaram",
-    description: "The traditional greeting pose, with palms joined in prayer position",
-    imageUrl: "./src/images/namaskaram.webp",
-    symbolism: "Reverence to the divine and respect for tradition",
-    mudraType: "Anjali"
-  },
+{
+  name: "Katti Adavu",
+  description: "A foundational Bharatanatyam adavu characterized by sharp stamping and forceful hand gestures, symbolizing strength and determination.",
+  videoUrls: ["./src/videos/KattiAdavu.mp4", "./src/videos/ref_smpl.mp4"],
+  symbolism: "Represents clenched strength or gripping force, often used to portray valor or intense emotion.",
+  mudraType: "Mushti"
+},
       {
-        name: "Araimandi",
-        description: "The fundamental half-sitting position, foundation of all Bharatanatyam poses",
-        imageUrl: "./src/images/araimindi.webp",
-        symbolism: "Stability and grounding in classical technique",
-        mudraType: "Pataka"
-      },
+  name: "Korvai Adavu",
+  description: "A complex sequence in Bharatanatyam that links multiple adavus into a rhythmic pattern, showcasing the dancer’s control, memory, and precision.",
+  videoUrls: ["./src/videos/Korvai_Adavu.mp4", "./src/videos/ref_smpl.mp4"],
+  symbolism: "Represents intricacy and mastery; often used as a climactic highlight in pure dance segments.",
+  mudraType: "Varying (depending on incorporated adavus)"
+},
       {
-        name: "Tribhanga",
-        description: "The graceful three-bend posture representing the cosmic dance",
-        imageUrl: "https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=600",
-        symbolism: "Divine grace and cosmic harmony",
-        mudraType: "Alapadma"
-      },
+  name: "Mandi Adavu",
+  description: "A dynamic Bharatanatyam adavu performed close to the ground with bent knees or squatting jumps, demanding agility and strength.",
+  videoUrls: ["./src/videos/Mandi_Adavu.mp4", "./src/videos/ref_smpl.mp4"],
+  symbolism: "Signifies humility, surrender, or moments of intense emotion; reflects grounded energy and devotion.",
+  mudraType: "Varying (commonly Ardhachandra, Tripataka or Katakamukha)"
+},{
+  name: "Natta Adavu",
+  description: "A foundational Bharatanatyam adavu characterized by stretched leg movements and striking the floor with the heel, synchronized with elegant arm positions.",
+  videoUrls: ["./src/videos/Natt_adavu.mp4", "./src/videos/ref_smpl.mp4"],
+  symbolism: "Symbolizes grace, rhythm, and control—used extensively in pure dance sequences to establish tempo and posture.",
+  mudraType: "Katakamukha"
+},
       {
-        name: "Bharatanatyam Hasta",
-        description: "Classical hand gesture expressing various emotions and stories",
-        imageUrl: "https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=600",
-        symbolism: "Communication through divine language of hands",
-        mudraType: "Hamsa"
-      },
-      {
-        name: "Utplavana",
-        description: "Dynamic jumping movement with precise landing in araimandi",
-        imageUrl: "https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=600",
-        symbolism: "Liberation and transcendence of earthly bounds",
-        mudraType: "Tripataka"
-      },
-      {
-        name: "Chakkars",
-        description: "Spinning movements that demonstrate control and grace",
-        imageUrl: "https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=600",
-        symbolism: "Cosmic cycles and eternal movement",
-        mudraType: "Kartarimukha"
-      },
-      {
-        name: "Bhramari",
-        description: "Bee-like movements with intricate hand gestures",
-        imageUrl: "https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=600",
-        symbolism: "Connection with nature and divine nectar",
-        mudraType: "Bhramara"
-      },
-      {
-        name: "Natanam Adinar",
-        description: "The iconic pose depicting Lord Shiva as the cosmic dancer",
-        imageUrl: "https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=600",
-        symbolism: "Universal creation, preservation, and destruction",
-        mudraType: "Abhaya"
-      }
+  name: "Paraval Adavu",
+  description: "A graceful Bharatanatyam adavu that involves sweeping, gliding movements across the stage, symbolizing flow and expansion.",
+  videoUrls: ["./src/videos/Paraval_Adavu.mp4", "./src/videos/ref_smpl.mp4"],
+  symbolism: "Represents spreading, flying, or expansive movement—used to convey transitions, joy, or grandeur.",
+  mudraType: "Alapadma or Tripataka"
+},
+     {
+  name: "Sarukkal Adavu",
+  description: "A sliding movement-based Bharatanatyam adavu where the feet glide across the floor with fluidity and grace, often accompanied by soft arm gestures.",
+  videoUrls: ["./src/videos/Sarukkal_Adavu.mp4", "./src/videos/ref_smpl.mp4"],
+  symbolism: "Symbolizes smooth transition, stealth, or elegance—used to portray gliding motions, delicate approaches, or emotional subtlety.",
+  mudraType: "Katakamukha or Alapadma"
+}
     ];
 
     // Cultural Elements

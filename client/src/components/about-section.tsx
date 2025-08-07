@@ -68,11 +68,17 @@ export function AboutSection() {
             Collaboration
           </motion.p>
 
+
           <motion.div
             className="flex justify-center items-center space-x-8 md:space-x-16 mb-8"
             variants={fadeInUp}
           >
-            {/* Timeline (commented for future use) */}
+            <motion.p className="text-lg md:text-xl text-red-800 text-cream mb-8 max-w-2xl mx-auto leading-relaxed"
+              variants={fadeInUp}>
+              Ankitha Sudarshan*, Lipisha Nitin Chaudhary* Tanvi Ranga, Ifeoma Nwogu, Rohini Srihari
+              <br />
+              University at Buffalo, State University of New York
+            </motion.p>
           </motion.div>
 
         </motion.div>
@@ -129,7 +135,16 @@ export function AboutSection() {
             variants={slideInRight}
           >
             <video
-              src="./src/videos/example.mp4"
+              className="rounded-lg shadow-lg w-full h-64 object-cover"
+              autoPlay
+              loop
+              muted
+              playsInline
+              src="./src/videos/example.mp4"/>
+
+
+            <video
+              src="./src/videos/realis_ref_reddancer_smpl (1).mp4"
               className="rounded-lg shadow-lg w-full h-64 object-cover"
               autoPlay
               loop
@@ -138,7 +153,7 @@ export function AboutSection() {
             />
 
             <video
-              src="./src/videos/example.mp4"
+               src="./src/videos/example.mp4"
               className="rounded-lg shadow-lg w-full h-64 object-cover"
               autoPlay
               loop
@@ -147,16 +162,7 @@ export function AboutSection() {
             />
 
             <video
-              src="./src/videos/example.mp4"
-              className="rounded-lg shadow-lg w-full h-64 object-cover"
-              autoPlay
-              loop
-              muted
-              playsInline
-            />
-
-            <video
-              src="./src/videos/example.mp4"
+              src="./src/videos/realis_ref_ankitha_smpl (1).mp4"
               className="rounded-lg shadow-lg w-full h-64 object-cover"
               autoPlay
               loop
