@@ -162,7 +162,7 @@ export function AboutSection() {
             />
 
             <video
-              src="./src/videos/realis_ref_ankitha_smpl (1).mp4"
+              src="./src/videos/realis_ref_ankitha1_smpl (1).mp4"
               className="rounded-lg shadow-lg w-full h-64 object-cover"
               autoPlay
               loop
