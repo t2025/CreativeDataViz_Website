@@ -4,7 +4,7 @@ import App from "./App";
 import "./index.css";
 
 createRoot(document.getElementById("root")!).render(
-  <BrowserRouter basename="/CreativeDataViz_Website/">
+  <BrowserRouter basename="/CreativeDataViz_Website">
     <App />
   </BrowserRouter>
 );
