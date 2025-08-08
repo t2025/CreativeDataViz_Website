@@ -17,7 +17,7 @@ export function CulturalElementGrid() {
   });
 
   if (isLoading) {
-    return <p className="text-center text-[#b38000]">Loading cultural elements...</p>;
+    return <p className="text-center text-[#9c1c1c]">Loading cultural elements...</p>;
   }
 
   if (!culturalElements || culturalElements.length === 0) {
@@ -25,6 +25,7 @@ export function CulturalElementGrid() {
   }
 
   return (
+    <section className="py-20 bg-white">
     <motion.div
       initial="initial"
       whileInView="animate"
@@ -32,7 +33,7 @@ export function CulturalElementGrid() {
       className="max-w-screen-xl mx-auto px-4"
     >
       <motion.h3
-        className="text-2xl md:text-3xl font-serif font-bold text-[#b38000] mb-8 text-center"
+        className="text-2xl md:text-4xl font-serif font-bold temple-gold mb-10 text-center"
         variants={fadeInUp}
       >
         Geometry & Choreography
@@ -60,27 +61,27 @@ export function CulturalElementGrid() {
                     {element.type}
                   </Badge>
                 </div>
-                <CardTitle className="text-xl font-serif font-bold text-[#b38000]">
+                <CardTitle className="text-xl font-serif font-bold text-[#9c1c1c]">
                   {element.name}
                 </CardTitle>
-                <CardDescription className="text-sm text-[#5f4330]/80">
+                <CardDescription className="text-sm text-[#5f4330]/80 font-serif">
                   {element.description}
                 </CardDescription>
               </CardHeader>
 
               <CardContent className="space-y-4">
                 <div>
-                  <p className="text-sm text-[#b38000] font-semibold mb-1">
+                  <p className="text-sm text-[#9c1c1c] font-semibold mb-1 font-serif">
                     Significance:
                   </p>
-                  <p className="text-sm text-[#3c2d1d] leading-relaxed">
+                  <p className="text-sm text-[#5f4330]/80 font-serif">
                     {element.significance}
                   </p>
                 </div>
               </CardContent>
 
               {element.imageUrl && (
-                <div className="w-full h-60 flex items-center justify-center overflow-hidden bg-[#f9f4e8]">
+                <div className="w-full h-60 flex items-center justify-center overflow-hidden bg-[#f9f4e8] rounded-b-md">
                   <img
                     src={element.imageUrl}
                     alt={element.name}
@@ -93,5 +94,6 @@ export function CulturalElementGrid() {
         ))}
       </motion.div>
     </motion.div>
+    </section>
   );
 }

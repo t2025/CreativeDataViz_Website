@@ -8,7 +8,7 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
+// Removed Badge import
 import {
   Dialog,
   DialogContent,
@@ -43,8 +43,9 @@ export function PoseLibrary() {
   }
 
   return (
-    <section className="py-20 bg-white">
+    <section className="py-20 bg-white" id="pose-library">
       <div className="max-w-7xl mx-auto px-4">
+        {/* Section Header */}
         <motion.div
           className="text-center mb-16"
           initial="initial"
@@ -53,19 +54,20 @@ export function PoseLibrary() {
           variants={staggerContainer}
         >
           <motion.h2
-            className="text-3xl md:text-4xl font-serif font-bold text-[#b38000] mb-6"
+            className="text-2xl md:text-4xl font-serif font-bold temple-gold mb-10"
             variants={fadeInUp}
           >
             Interactive Pose Library
           </motion.h2>
           <motion.p
-            className="text-lg text-[#5f4330]/80 mb-8 max-w-2xl mx-auto"
+            className="text-lg text-[#5f4330]/80 mb-8 max-w-2xl mx-auto font-serif"
             variants={fadeInUp}
           >
             Explore the fundamental positions and movements of Bharatanatyam
           </motion.p>
         </motion.div>
 
+        {/* Pose Grid */}
         <motion.div
           className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-6"
           variants={staggerContainer}
@@ -75,7 +77,7 @@ export function PoseLibrary() {
         >
           {poses?.map((pose, index) => (
             <motion.div key={pose.id} variants={fadeInUp} custom={index}>
-              <Dialog>
+              <Dialog onOpenChange={(open) => setSelectedPose(open ? pose : null)}>
                 <DialogTrigger asChild>
                   <motion.div
                     className="pose-card cursor-pointer"
@@ -83,7 +85,7 @@ export function PoseLibrary() {
                     whileHover="whileHover"
                   >
                     <Card className="bg-[#fdf6ec] border border-neutral-200 hover:border-[#b38000] transition-colors duration-300 text-[#3c2d1d] shadow-md min-h-[360px]">
-                      {/* Two inline videos in card */}
+                      {/* Inline Videos in Card */}
                       <div className="flex gap-2 px-2 pt-2 justify-center">
                         {pose.videoUrls.slice(0, 2).map((url, i) => (
                           <span key={i} className="w-1/2">
@@ -100,35 +102,32 @@ export function PoseLibrary() {
                       </div>
 
                       <CardHeader className="pb-2">
-                        <CardTitle className="text-lg font-serif font-bold text-[#b38000]">
+                        <CardTitle className="text-lg font-serif font-bold text-[#9c1c1c]">
                           {pose.name}
                         </CardTitle>
-                        <CardDescription className="text-sm text-[#5f4330]/80 line-clamp-2">
+                        <CardDescription className="text-sm text-[#5f4330]/80 line-clamp-2 font-serif">
                           {pose.description}
                         </CardDescription>
                       </CardHeader>
-                      <CardContent className="pt-2">
-                        <div className="flex items-center justify-between">
-                          <Badge variant="secondary" className="text-xs capitalize">
-                            {pose.mudraType || "General"}
-                          </Badge>
-                        </div>
-                      </CardContent>
+
+                      {/* No mudra type in the card */}
+                      <CardContent className="pt-2" />
                     </Card>
                   </motion.div>
                 </DialogTrigger>
 
-                <DialogContent className="max-w-4xl bg-[#fdf6ec] border border-neutral-200 text-[#3c2d1d]">
-                  <DialogHeader>
-                    <DialogTitle className="text-2xl font-serif font-bold text-[#b38000]">
-                      {pose.name}
+                {/* Dialog Content */}
+                <DialogContent className="max-w-4xl bg-[#fdf6ec] border border-neutral-200 text-[#3c2d1d] font-serif">
+                  <DialogHeader className="flex flex-col gap-2">
+                    <DialogTitle className="text-2xl font-serif font-bold text-[#9c1c1c]">
+                      {selectedPose?.name ?? pose.name}
                     </DialogTitle>
-                    <DialogDescription className="text-sm text-[#5f4330]/80">
-                      {pose.description}
+                    <DialogDescription className="text-sm text-[#5f4330]/80 font-serif">
+                      {selectedPose?.description ?? pose.description}
                     </DialogDescription>
                   </DialogHeader>
 
-                  {/* Two inline videos in modal */}
+                  {/* Inline Videos in Dialog */}
                   <div className="flex gap-4 py-4 justify-center">
                     {pose.videoUrls.slice(0, 2).map((url, i) => (
                       <span key={i} className="w-1/2">
@@ -144,20 +143,19 @@ export function PoseLibrary() {
                     ))}
                   </div>
 
+                  {/* Additional Details */}
                   <div className="space-y-4 mt-4">
                     {pose.symbolism && (
                       <div>
-                        <h4 className="font-semibold text-[#b38000] mb-2">Symbolism</h4>
-                        <p className="text-sm text-[#3c2d1d]">{pose.symbolism}</p>
+                        <h4 className="font-semibold text-[#9c1c1c] mb-2">Symbolism</h4>
+                        <p className="text-sm text-[#5f4330]/80 font-serif]">{pose.symbolism}</p>
                       </div>
                     )}
 
                     {pose.mudraType && (
                       <div>
-                        <h4 className="font-semibold text-[#b38000] mb-2">Mudra Type</h4>
-                        <Badge variant="secondary" className="capitalize">
-                          {pose.mudraType}
-                        </Badge>
+                        <h4 className="font-semibold text-[#9c1c1c] mb-2">Mudra Type</h4>
+                        <p className="text-sm text-[#5f4330]/80 font-serif capitalize">{pose.mudraType}</p>
                       </div>
                     )}
                   </div>

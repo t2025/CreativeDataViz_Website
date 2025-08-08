@@ -8,7 +8,7 @@ export function AICoDanceSection() {
     <section className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4">
         <motion.h2
-          className="text-3xl md:text-4xl font-serif font-bold text-temple-gold text-center mb-12"
+          className="text-2xl md:text-4xl font-serif font-bold temple-gold mb-10 text-center"
           variants={fadeInUp}
           initial="initial"
           whileInView="animate"
@@ -26,9 +26,9 @@ export function AICoDanceSection() {
         >
           {/* Human Dance */}
           <div className="text-center">
-            <p className="text-lg text-gray-700 mb-2 font-semibold">Human Performance</p>
+            <p className="text-lg text-[#9c1c1c] mb-2 font-semibold font-serif">Human Performance</p>
             <video
-              src="./src/videos/realis_ref_ankitha1_smpl (1).mp4"
+              src="https://bharatnatyambucket.s3.us-east-1.amazonaws.com/realis_ref_ankitha1_smpl+(1).mp4"
               autoPlay
               loop
               muted
@@ -38,9 +38,9 @@ export function AICoDanceSection() {
 
           {/* Mesh Animation */}
           <div className="text-center">
-            <p className="text-lg text-gray-700 mb-2 font-semibold">Mesh Animation</p>
+            <p className="text-lg text-[#9c1c1c] mb-2 font-semibold font-serif">Mesh Animation</p>
             <video
-              src="./src/videos/example.mp4"
+              src="https://bharatnatyambucket.s3.us-east-1.amazonaws.com/example.mp4"
               autoPlay
               loop
               muted
@@ -50,9 +50,9 @@ export function AICoDanceSection() {
 
           {/* RealisDance Output */}
           <div className="text-center">
-            <p className="text-lg text-gray-700 mb-2 font-semibold">Our Output</p>
+            <p className="text-lg text-[#9c1c1c] mb-2 font-semibold font-serif">Our Output</p>
             <video
-              src="./src/videos/ref_smpl.mp4"
+              src="https://bharatnatyambucket.s3.us-east-1.amazonaws.com/ref_smpl.mp4"
               autoPlay
               loop
               muted
@@ -62,7 +62,7 @@ export function AICoDanceSection() {
         </motion.div>
 
         <motion.p
-          className="text-center text-gray-600 max-w-4xl mx-auto mt-12 text-base"
+          className="text-center text-lg text-cream max-w-4xl mx-auto mt-12 text-base font-serif leading-relaxed"
           variants={fadeInUp}
           initial="initial"
           whileInView="animate"

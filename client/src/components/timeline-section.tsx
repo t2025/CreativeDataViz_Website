@@ -22,7 +22,7 @@ export function TimelineSection() {
 
   if (isLoading) {
     return (
-      <div className="py-20 bg-white">
+     <div className="pt-0 bg-white">
         <div className="max-w-6xl mx-auto px-4">
           <div className="text-center">
             <div className="animate-pulse">
@@ -47,22 +47,22 @@ export function TimelineSection() {
     past: {
       title: "Past · Origins and Revival",
       description: "Sacred traditions and temple heritage",
-      color: "text-[#9c1c1c]",
+      color: "text-[#9c1c1c] font-serif",
     },
     present: {
       title: "Present · Innovation",
       description: "Modern renaissance and global recognition",
-      color: "text-[#9c1c1c]",
+      color: "text-[#9c1c1c] font-serif",
     },
     future: {
       title: "Future · Innovation",
       description: "Digital preservation and AI integration",
-      color: "text-[#f97316]",
+      color: "text-[#f97316] font-serif",
     },
   };
 
   return (
-    <div className="py-20 bg-white">
+    <div className="pt-0 bg-white">
       <div className="max-w-6xl mx-auto px-4">
         <motion.div
           className="text-center mb-16"
@@ -90,7 +90,7 @@ export function TimelineSection() {
                 >
                   {config.title}
                 </h3>
-                <p className="text-lg text-[#5f4330]/80 max-w-2xl mx-auto">
+                <p className="text-lg text-[#5f4330]/80 max-w-2xl mx-auto font-serif">
                   {config.description}
                 </p>
               </motion.div>
@@ -115,25 +115,25 @@ export function TimelineSection() {
                               {event.era}
                             </Badge>
                           </div>
-                          <CardTitle className="text-2xl md:text-3xl font-serif font-bold text-[#b38000]">
+                          <CardTitle className="text-2xl md:text-3xl font-serif font-bold text-[#9c1c1c]">
                             {event.title}
                           </CardTitle>
-                          <CardDescription className="text-base text-[#5f4330]/80">
+                          <CardDescription className="text-base text-[#5f4330]/80 font-serif">
                             {event.description}
                           </CardDescription>
                         </CardHeader>
 
                         <CardContent className="space-y-4">
-                          <p className="text-sm font-semibold text-[#b38000]">
+                          <p className="text-sm font-semibold text-[#9c1c1c] font-serif mb-2">
                             Cultural Significance:
                           </p>
-                          <p className="text-sm text-[#3c2d1d]">
+                          <p className="text-sm text-[#5f4330]/80 font-serif">
                             {event.significance}
                           </p>
 
                           {event.innovations?.length > 0 && (
                             <div>
-                              <p className="text-sm font-semibold text-[#b38000] mb-2">
+                              <p className="text-sm font-semibold text-[#9c1c1c] mb-2">
                                 Key Innovations:
                               </p>
                               <ul className="space-y-1">
@@ -185,7 +185,7 @@ export function TimelineSection() {
                         >
                           <source
                             src={
-                              event.imageUrl || "./src/videos/ref_smpl.mp4"
+                              event.imageUrl || "https://bharatnatyambucket.s3.us-east-1.amazonaws.com/ref_smpl.mp4"
                             }
                             type="video/mp4"
                           />

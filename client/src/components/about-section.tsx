@@ -54,29 +54,30 @@ export function AboutSection() {
           </motion.h1>
 
           <motion.p
-            className="text-xl md:text-2xl temple-gold mb-4 font-light"
+            className="text-lg md:text-2xl temple-gold mb-4 font-serif"
             variants={fadeInUp}
           >
-            A unified dataset for Indian Classical Dance form
+            A Unified 3D Dataset for Indian Classical Dance Form
           </motion.p>
 
-          <motion.p
+          {/* <motion.p
             className="text-lg md:text-xl text-cream mb-8 max-w-2xl mx-auto leading-relaxed"
             variants={fadeInUp}
           >
             Advancing Cultural Traditions through AI-Driven Choreographic
             Collaboration
-          </motion.p>
+          </motion.p> */}
 
 
           <motion.div
             className="flex justify-center items-center space-x-8 md:space-x-16 mb-8"
             variants={fadeInUp}
           >
-            <motion.p className="text-lg md:text-xl text-red-800 text-cream mb-8 max-w-2xl mx-auto leading-relaxed"
+            <motion.p className="text-lg  font-serif font-bold mb-6 gradient-text"
               variants={fadeInUp}>
               Ankitha Sudarshan*, Lipisha Nitin Chaudhary* Tanvi Ranga, Ifeoma Nwogu, Rohini Srihari
               <br />
+              
               University at Buffalo, State University of New York
             </motion.p>
           </motion.div>
@@ -91,21 +92,21 @@ export function AboutSection() {
           viewport={{ once: true }}
         >
           <motion.div className="space-y-6" variants={slideInLeft}>
-            <p className="text-lg text-cream leading-relaxed">
+            <p className="text-lg text-cream leading-relaxed font-serif">
               Bharatanatyam stands as one of the world's most ancient and
               sophisticated dance forms, originating in the sacred temples of
               Tamil Nadu over a thousand years ago. This classical art form
               represents the perfect union of spiritual devotion, technical
               precision, and artistic expression.
             </p>
-            <p className="text-lg text-cream leading-relaxed">
+            <p className="text-lg text-cream leading-relaxed font-serif">
               Our digital heritage platform leverages cutting-edge technology to
               preserve, teach, and evolve this timeless art form. Through
               interactive experiences, we bridge the gap between ancient wisdom
               and modern learning, making Bharatanatyam accessible to
               practitioners worldwide.
             </p>
-            <p className="text-lg text-cream leading-relaxed">
+            <p className="text-lg text-cream leading-relaxed font-serif">
               By combining traditional knowledge with artificial intelligence,
               motion capture, and virtual reality, we create immersive
               experiences that honor the past while embracing the future of
@@ -140,11 +141,11 @@ export function AboutSection() {
               loop
               muted
               playsInline
-              src="./src/videos/example.mp4"/>
+              src="https://bharatnatyambucket.s3.us-east-1.amazonaws.com/example.mp4"/>
 
 
             <video
-              src="./src/videos/realis_ref_reddancer_smpl (1).mp4"
+              src="https://bharatnatyambucket.s3.us-east-1.amazonaws.com/realis_ref_reddancer_smpl+(1).mp4"
               className="rounded-lg shadow-lg w-full h-64 object-cover"
               autoPlay
               loop
@@ -153,7 +154,7 @@ export function AboutSection() {
             />
 
             <video
-               src="./src/videos/example.mp4"
+               src="https://bharatnatyambucket.s3.us-east-1.amazonaws.com/example.mp4"
               className="rounded-lg shadow-lg w-full h-64 object-cover"
               autoPlay
               loop
@@ -162,7 +163,7 @@ export function AboutSection() {
             />
 
             <video
-              src="./src/videos/realis_ref_ankitha1_smpl (1).mp4"
+              src="https://bharatnatyambucket.s3.us-east-1.amazonaws.com/realis_ref_ankitha1_smpl+(1).mp4"
               className="rounded-lg shadow-lg w-full h-64 object-cover"
               autoPlay
               loop

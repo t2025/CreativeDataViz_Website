@@ -17,7 +17,6 @@ export default function Home() {
       <AICoDanceSection/>
       <PipelineSection/>
       <HeroSection />
-      <TimelineSection />
       <CulturalElementGrid/>
       <PoseLibrary />
       {/* <TeamSection /> */}

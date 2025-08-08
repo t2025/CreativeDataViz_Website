@@ -22,7 +22,7 @@ export const dancePoses = pgTable("dance_poses", {
 
 export const timelineEvents = pgTable("timeline_events", {
   id: serial("id").primaryKey(),
-  year: integer("year").notNull(),
+  year: text("year").notNull(),
   era: text("era").notNull(), // "past", "present", "future"
   title: text("title").notNull(),
   description: text("description").notNull(),

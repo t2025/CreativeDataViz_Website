@@ -19,9 +19,9 @@ export function Navigation() {
 
   const navItems = [
     { href: "#about", label: "About" },
-    { href: "#past", label: "Past" },
-    { href: "#present", label: "Present" },
-    { href: "#future", label: "Future" },
+    { href: ["#past","#present"], label: "Timeline" },
+    { href: "#pose-library", label: "Pose Library" },
+  
   ];
 
   const scrollToSection = (sectionId: string) => {
@@ -50,7 +50,7 @@ export function Navigation() {
               <button
                 key={item.href}
                 onClick={() => scrollToSection(item.href)}
-                className="text-cream hover:temple-gold transition-colors duration-200 font-medium"
+                className="text-cream hover:temple-gold transition-colors duration-200 font-medium font-serif"
               >
                 {item.label}
               </button>
