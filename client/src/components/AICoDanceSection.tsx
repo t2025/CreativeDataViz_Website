@@ -5,7 +5,7 @@ import { fadeInUp } from "@/lib/animations";
 
 export function AICoDanceSection() {
   return (
-    <section className="py-20 bg-white">
+    <section className="py-20 bg-white" id="ai-co-dance">
       <div className="max-w-7xl mx-auto px-4">
         <motion.h2
           className="text-2xl md:text-4xl font-serif font-bold temple-gold mb-10 text-center"

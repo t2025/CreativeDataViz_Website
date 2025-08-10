@@ -19,7 +19,7 @@ export function Navigation() {
 
   const navItems = [
     { href: "#about", label: "About" },
-    { href: ["#past","#present"], label: "Timeline" },
+    { href: "#ai-co-dance", label: "Co-Dancing" },
     { href: "#pose-library", label: "Pose Library" },
   
   ];
