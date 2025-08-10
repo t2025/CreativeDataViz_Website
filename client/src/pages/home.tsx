@@ -16,8 +16,8 @@ export default function Home() {
       <AboutSection />
       <AICoDanceSection/>
       <PipelineSection/>
-      <HeroSection />
-      <CulturalElementGrid/>
+      {/* <HeroSection /> */}
+      {/* <CulturalElementGrid/> */}
       <PoseLibrary />
       {/* <TeamSection /> */}
       <Footer />

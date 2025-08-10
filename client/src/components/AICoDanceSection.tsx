@@ -60,6 +60,50 @@ export function AICoDanceSection() {
             />
           </div>
         </motion.div>
+        <motion.div
+          className="grid md:grid-cols-3 gap-8 items-start justify-center"
+          variants={fadeInUp}
+          initial="initial"
+          whileInView="animate"
+          viewport={{ once: true }}
+        >
+          {/* Human Dance */}
+          <div className="text-center">
+            <p className="text-lg text-[#9c1c1c] mb-2 font-semibold font-serif">Human Performance</p>
+            <video
+              src="https://bharatnatyambucket.s3.us-east-1.amazonaws.com/realis_ref_ankitha1_smpl+(1).mp4"
+              autoPlay
+              loop
+              muted
+              className="w-full h-[30rem] object-cover rounded-lg shadow-md mx-auto"
+            />
+          </div>
+
+          {/* Mesh Animation */}
+          <div className="text-center">
+            <p className="text-lg text-[#9c1c1c] mb-2 font-semibold font-serif">Mesh Animation</p>
+            <video
+              src="https://bharatnatyambucket.s3.us-east-1.amazonaws.com/example.mp4"
+              autoPlay
+              loop
+              muted
+              className="w-full h-[30rem] object-cover rounded-lg shadow-md mx-auto"
+            />
+          </div>
+
+          {/* RealisDance Output */}
+          <div className="text-center">
+            <p className="text-lg text-[#9c1c1c] mb-2 font-semibold font-serif">Our Output</p>
+            <video
+              src="https://bharatnatyambucket.s3.us-east-1.amazonaws.com/ref_smpl.mp4"
+              autoPlay
+              loop
+              muted
+              className="w-full h-[30rem] object-cover rounded-lg shadow-md mx-auto"
+            />
+          </div>
+        </motion.div>
+
 
         <motion.p
           className="text-center text-lg text-cream max-w-4xl mx-auto mt-12 text-base font-serif leading-relaxed"

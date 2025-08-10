@@ -30,38 +30,38 @@ export function Footer() {
         }
       ],
     },
-    {
-      title: "Research Contributions",
-      links: [
-        {
-          name: "Footwork2Frameworks Project Overview",
-          href: "https://github.com/t2025/Footwork2Frameworks",
-        },
-        {
-          name: "RealisDance: Diffusion-based Motion Stylization",
-          href: "https://thefoxofsky.github.io/project_pages/RealisDance-DiT/index.html",
-        },
-        {
-          name: "GVHMR: Generalizable Video-based Human Mesh Recovery",
-          href: "https://zju3dv.github.io/gvhmr/",
-        },
-      ],
-    },
-    {
-      title: "Digital Tools",
-      links: [
-        { name: "SMPL-X Model", href: "https://smpl-x.is.tue.mpg.de/" },
-        {
-          name: "RealisDance",
-          href: "https://thefoxofsky.github.io/project_pages/RealisDance-DiT/index.html",
-        },
-        { name: "GVHMR", href: "https://zju3dv.github.io/gvhmr/" },
-        {
-          name: "MediaPipe",
-          href: "https://developers.google.com/mediapipe",
-        },
-      ],
-    },
+  //   {
+  //     title: "Research Contributions",
+  //     links: [
+  //       {
+  //         name: "Footwork2Frameworks Project Overview",
+  //         href: "https://github.com/t2025/Footwork2Frameworks",
+  //       },
+  //       {
+  //         name: "RealisDance: Diffusion-based Motion Stylization",
+  //         href: "https://thefoxofsky.github.io/project_pages/RealisDance-DiT/index.html",
+  //       },
+  //       {
+  //         name: "GVHMR: Generalizable Video-based Human Mesh Recovery",
+  //         href: "https://zju3dv.github.io/gvhmr/",
+  //       },
+  //     ],
+  //   },
+  //   {
+  //     title: "Digital Tools",
+  //     links: [
+  //       { name: "SMPL-X Model", href: "https://smpl-x.is.tue.mpg.de/" },
+  //       {
+  //         name: "RealisDance",
+  //         href: "https://thefoxofsky.github.io/project_pages/RealisDance-DiT/index.html",
+  //       },
+  //       { name: "GVHMR", href: "https://zju3dv.github.io/gvhmr/" },
+  //       {
+  //         name: "MediaPipe",
+  //         href: "https://developers.google.com/mediapipe",
+  //       },
+  //     ],
+  //   },
   ];
 
   return (

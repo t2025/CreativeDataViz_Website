@@ -1,33 +1,121 @@
+// components/PoseLibrary.tsx
 import { useState } from "react";
 import { useQuery } from "@tanstack/react-query";
 import { motion } from "framer-motion";
 import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardHeader,
-  CardTitle,
+  Card, CardContent, CardDescription, CardHeader, CardTitle,
 } from "@/components/ui/card";
-// Removed Badge import
 import {
-  Dialog,
-  DialogContent,
-  DialogDescription,
-  DialogHeader,
-  DialogTitle,
-  DialogTrigger,
+  Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle, DialogTrigger,
 } from "@/components/ui/dialog";
 import { fadeInUp, staggerContainer, poseCardHover } from "@/lib/animations";
 import type { DancePose } from "@shared/schema";
 
+// --- Your local data (exactly as provided) ---
+type InsertDancePose = {
+  name: string;
+  description: string;
+  videoUrls: string[];
+  symbolism?: string;
+  mudraType?: string;
+};
+
+const poseData: InsertDancePose[] = [
+  {
+    name: "Katti Adavu",
+    description:
+      "A foundational Bharatanatyam adavu characterized by sharp stamping and forceful hand gestures, symbolizing strength and determination.",
+    videoUrls: [
+      "https://bharatnatyambucket.s3.us-east-1.amazonaws.com/Natt_adavu.mp4",
+      "https://bharatnatyambucket.s3.us-east-1.amazonaws.com/ref_smpl.mp4",
+    ],
+    symbolism:
+      "Represents clenched strength or gripping force, often used to portray valor or intense emotion.",
+    mudraType: "Mushti",
+  },
+  {
+    name: "Korvai Adavu",
+    description:
+      "A complex sequence in Bharatanatyam that links multiple adavus into a rhythmic pattern, showcasing the dancer’s control, memory, and precision.",
+    videoUrls: [
+      "https://bharatnatyambucket.s3.us-east-1.amazonaws.com/Korvai_Adavu.mp4",
+      "https://bharatnatyambucket.s3.us-east-1.amazonaws.com/ref_smpl.mp4",
+    ],
+    symbolism:
+      "Represents intricacy and mastery; often used as a climactic highlight in pure dance segments.",
+    mudraType: "Varying (depending on incorporated adavus)",
+  },
+  {
+    name: "Mandi Adavu",
+    description:
+      "A dynamic Bharatanatyam adavu performed close to the ground with bent knees or squatting jumps, demanding agility and strength.",
+    videoUrls: [
+      "https://bharatnatyambucket.s3.us-east-1.amazonaws.com/Mandi_Adavu.mp4",
+      "https://bharatnatyambucket.s3.us-east-1.amazonaws.com/ref_smpl.mp4",
+    ],
+    symbolism:
+      "Signifies humility, surrender, or moments of intense emotion; reflects grounded energy and devotion.",
+    mudraType: "Varying (commonly Ardhachandra, Tripataka or Katakamukha)",
+  },
+  {
+    name: "Natta Adavu",
+    description:
+      "A foundational Bharatanatyam adavu characterized by stretched leg movements and striking the floor with the heel, synchronized with elegant arm positions.",
+    videoUrls: [
+      "https://bharatnatyambucket.s3.us-east-1.amazonaws.com/Natt_adavu.mp4",
+      "https://bharatnatyambucket.s3.us-east-1.amazonaws.com/ref_smpl.mp4",
+    ],
+    symbolism:
+      "Symbolizes grace, rhythm, and control—used extensively in pure dance sequences to establish tempo and posture.",
+    mudraType: "Katakamukha",
+  },
+  {
+    name: "Paraval Adavu",
+    description:
+      "A graceful Bharatanatyam adavu that involves sweeping, gliding movements across the stage, symbolizing flow and expansion.",
+    videoUrls: [
+      "https://bharatnatyambucket.s3.us-east-1.amazonaws.com/ParavalAdavu1.1.mp4",
+      "https://bharatnatyambucket.s3.us-east-1.amazonaws.com/ref_smpl.mp4",
+    ],
+    symbolism:
+      "Represents spreading, flying, or expansive movement—used to convey transitions, joy, or grandeur.",
+    mudraType: "Alapadma or Tripataka",
+  },
+  {
+    name: "Sarukkal Adavu",
+    description:
+      "A sliding movement-based Bharatanatyam adavu where the feet glide across the floor with fluidity and grace, often accompanied by soft arm gestures.",
+    videoUrls: [
+      "https://bharatnatyambucket.s3.us-east-1.amazonaws.com/Sarukkal_Adavu.mp4",
+      "https://bharatnatyambucket.s3.us-east-1.amazonaws.com/ref_smpl.mp4",
+    ],
+    symbolism:
+      "Symbolizes smooth transition, stealth, or elegance—used to portray gliding motions, delicate approaches, or emotional subtlety.",
+    mudraType: "Katakamukha or Alapadma",
+  },
+];
+
+// Optional: map local insert type -> your API type (generate ids)
+const localPoses: DancePose[] = poseData.map((p, i) => ({
+  id: i + 1, // fallback id
+  name: p.name,
+  description: p.description,
+  videoUrls: p.videoUrls,
+  symbolism: p.symbolism,
+  mudraType: p.mudraType,
+}));
+
 export function PoseLibrary() {
   const [selectedPose, setSelectedPose] = useState<DancePose | null>(null);
 
-  const { data: poses, isLoading } = useQuery<DancePose[]>({
+  const { data: apiPoses, isLoading } = useQuery<DancePose[]>({
     queryKey: ["/api/poses"],
   });
 
-  if (isLoading) {
+  // Prefer API data if present; otherwise use your local data
+  const poses: DancePose[] = apiPoses?.length ? apiPoses : localPoses;
+
+  if (isLoading && !apiPoses?.length) {
     return (
       <div className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4">
@@ -75,8 +163,8 @@ export function PoseLibrary() {
           whileInView="animate"
           viewport={{ once: true }}
         >
-          {poses?.map((pose, index) => (
-            <motion.div key={pose.id} variants={fadeInUp} custom={index}>
+          {poses.map((pose, index) => (
+            <motion.div key={pose.id ?? `${pose.name}-${index}`} variants={fadeInUp} custom={index}>
               <Dialog onOpenChange={(open) => setSelectedPose(open ? pose : null)}>
                 <DialogTrigger asChild>
                   <motion.div
@@ -110,7 +198,6 @@ export function PoseLibrary() {
                         </CardDescription>
                       </CardHeader>
 
-                      {/* No mudra type in the card */}
                       <CardContent className="pt-2" />
                     </Card>
                   </motion.div>
@@ -148,14 +235,16 @@ export function PoseLibrary() {
                     {pose.symbolism && (
                       <div>
                         <h4 className="font-semibold text-[#9c1c1c] mb-2">Symbolism</h4>
-                        <p className="text-sm text-[#5f4330]/80 font-serif]">{pose.symbolism}</p>
+                        <p className="text-sm text-[#5f4330]/80 font-serif">{pose.symbolism}</p>
                       </div>
                     )}
 
                     {pose.mudraType && (
                       <div>
                         <h4 className="font-semibold text-[#9c1c1c] mb-2">Mudra Type</h4>
-                        <p className="text-sm text-[#5f4330]/80 font-serif capitalize">{pose.mudraType}</p>
+                        <p className="text-sm text-[#5f4330]/80 font-serif capitalize">
+                          {pose.mudraType}
+                        </p>
                       </div>
                     )}
                   </div>
