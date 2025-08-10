@@ -15,6 +15,10 @@ export function Footer() {
           name: "ACM Digital Library",
           href: "https://dl.acm.org/",
         },
+        {
+          name: "Bharatanatyam Adavus Dataset – Hugging Face",
+          href: "https://huggingface.co/datasets/vibhuti16/bharatnatyam_adavus",
+        },
       ],
     },
     {
@@ -26,62 +30,25 @@ export function Footer() {
         },
         {
           name: "Sampradaya Dance Creations",
-          href:"https://www.sampradaya.ca/"
-        }
+          href: "https://www.sampradaya.ca/",
+        },
       ],
     },
-  //   {
-  //     title: "Research Contributions",
-  //     links: [
-  //       {
-  //         name: "Footwork2Frameworks Project Overview",
-  //         href: "https://github.com/t2025/Footwork2Frameworks",
-  //       },
-  //       {
-  //         name: "RealisDance: Diffusion-based Motion Stylization",
-  //         href: "https://thefoxofsky.github.io/project_pages/RealisDance-DiT/index.html",
-  //       },
-  //       {
-  //         name: "GVHMR: Generalizable Video-based Human Mesh Recovery",
-  //         href: "https://zju3dv.github.io/gvhmr/",
-  //       },
-  //     ],
-  //   },
-  //   {
-  //     title: "Digital Tools",
-  //     links: [
-  //       { name: "SMPL-X Model", href: "https://smpl-x.is.tue.mpg.de/" },
-  //       {
-  //         name: "RealisDance",
-  //         href: "https://thefoxofsky.github.io/project_pages/RealisDance-DiT/index.html",
-  //       },
-  //       { name: "GVHMR", href: "https://zju3dv.github.io/gvhmr/" },
-  //       {
-  //         name: "MediaPipe",
-  //         href: "https://developers.google.com/mediapipe",
-  //       },
-  //     ],
-  //   },
   ];
 
   return (
     <footer className="bg-white border-t border-temple-gold/20">
-      <div className="max-w-6xl mx-auto px-4 py-12">
-        {/* Footer Grid Sections */}
+      <div className="max-w-6xl mx-auto px-4 py-10 md:py-12">
         <motion.div
-          className="grid md:grid-cols-4 gap-8 mb-8"
+          className="grid grid-cols-1 md:grid-cols-2 gap-10 mb-6"
           initial="initial"
           whileInView="animate"
           viewport={{ once: true }}
-          variants={{
-            animate: {
-              transition: { staggerChildren: 0.1 },
-            },
-          }}
+          variants={{ animate: { transition: { staggerChildren: 0.1 } } }}
         >
           {footerSections.map((section, index) => (
             <motion.div key={index} className="space-y-4" variants={fadeInUp}>
-              <h3 className="font-semibold text-temple-gold font-serif">
+              <h3 className="font-semibold text-temple-gold font-serif text-base md:text-lg">
                 {section.title}
               </h3>
               <ul className="space-y-2">
@@ -99,7 +66,7 @@ export function Footer() {
                     >
                       {link.name}
                       {link.href.startsWith("http") && (
-                        <ExternalLink className="w-3 h-3" />
+                        <ExternalLink className="w-3 h-3" aria-hidden="true" />
                       )}
                     </a>
                   </li>
@@ -109,17 +76,16 @@ export function Footer() {
           ))}
         </motion.div>
 
-        {/* Legal + Institutional Info */}
         <motion.div
-          className="border-t border-temple-gold/20 pt-8"
+          className="border-t border-temple-gold/20 pt-6"
           initial="initial"
           whileInView="animate"
           viewport={{ once: true }}
           variants={fadeInUp}
         >
-          <div className="flex flex-col md:flex-row justify-between items-center text-sm text-gray-500">
+          <div className="flex flex-col md:flex-row justify-between items-center text-sm text-gray-500 gap-3">
             <p>© 2025 Footwork2Frameworks.</p>
-            <div className="flex gap-4 mt-4 md:mt-0">
+            <div className="flex gap-4">
               <a
                 href="https://engineering.buffalo.edu/"
                 className="hover:text-temple-gold transition-colors duration-200"

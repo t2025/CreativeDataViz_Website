@@ -69,7 +69,7 @@ export function AICoDanceSection() {
         >
           {/* Human Dance */}
           <div className="text-center">
-            <p className="text-lg text-[#9c1c1c] mb-2 font-semibold font-serif">Human Performance</p>
+           <br />
             <video
               src="https://bharatnatyambucket.s3.us-east-1.amazonaws.com/realis_ref_ankitha1_smpl+(1).mp4"
               autoPlay
@@ -81,7 +81,7 @@ export function AICoDanceSection() {
 
           {/* Mesh Animation */}
           <div className="text-center">
-            <p className="text-lg text-[#9c1c1c] mb-2 font-semibold font-serif">Mesh Animation</p>
+            <br />
             <video
               src="https://bharatnatyambucket.s3.us-east-1.amazonaws.com/example.mp4"
               autoPlay
@@ -93,7 +93,7 @@ export function AICoDanceSection() {
 
           {/* RealisDance Output */}
           <div className="text-center">
-            <p className="text-lg text-[#9c1c1c] mb-2 font-semibold font-serif">Our Output</p>
+            <br />
             <video
               src="https://bharatnatyambucket.s3.us-east-1.amazonaws.com/ref_smpl.mp4"
               autoPlay

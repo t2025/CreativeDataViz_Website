@@ -224,7 +224,7 @@ export function PoseLibrary() {
                           muted
                           autoPlay
                           loop
-                          controls
+                          playsInline
                         />
                       </span>
                     ))}

@@ -5,7 +5,7 @@ import runtimeErrorOverlay from "@replit/vite-plugin-runtime-error-modal";
 
 // vite.config.ts
 export default defineConfig({
-  base: "/CreativeDataViz_Website/", // <-- use your repo name here; "/" for user site
+  base: "/Footwork2Framework/", // <-- use your repo name here; "/" for user site
   plugins: [
     react(),
     runtimeErrorOverlay(),

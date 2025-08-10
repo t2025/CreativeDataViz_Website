@@ -77,7 +77,7 @@ export function AboutSection() {
               variants={fadeInUp}>
               Ankitha Sudarshan*, Lipisha Nitin Chaudhary* Tanvi Ranga, Ifeoma Nwogu, Rohini Srihari
               <br />
-              
+
               University at Buffalo, State University of New York
             </motion.p>
           </motion.div>
@@ -92,26 +92,20 @@ export function AboutSection() {
           viewport={{ once: true }}
         >
           <motion.div className="space-y-6" variants={slideInLeft}>
-            <p className="text-lg text-cream leading-relaxed font-serif">
-              Bharatanatyam stands as one of the world's most ancient and
-              sophisticated dance forms, originating in the sacred temples of
-              Tamil Nadu over a thousand years ago. This classical art form
-              represents the perfect union of spiritual devotion, technical
-              precision, and artistic expression.
-            </p>
-            <p className="text-lg text-cream leading-relaxed font-serif">
-              Our digital heritage platform leverages cutting-edge technology to
-              preserve, teach, and evolve this timeless art form. Through
-              interactive experiences, we bridge the gap between ancient wisdom
-              and modern learning, making Bharatanatyam accessible to
-              practitioners worldwide.
-            </p>
-            <p className="text-lg text-cream leading-relaxed font-serif">
-              By combining traditional knowledge with artificial intelligence,
-              motion capture, and virtual reality, we create immersive
-              experiences that honor the past while embracing the future of
-              cultural preservation.
-            </p>
+            <>
+              <p className="text-lg text-cream leading-relaxed font-serif">
+                Traditional South Asian dance forms encode complex motions, rhythms, and expressions through coordinated movements of the body and hands. Yet they remain largely absent from computational archives due to scarce motion-capture resources and the difficulty of capturing fine-grained, synchronized motion at scale.
+              </p>
+
+              <p className="text-lg text-cream leading-relaxed font-serif">
+                We introduce Footwork2Framework (F2F)—the first large-scale 3D motion dataset for South Asian classical dance, focusing on Bharatanatyam. It comprises over 47,000 seconds of temporally aligned full-body and detailed hand mesh sequences reconstructed from high-resolution videos using state-of-the-art mesh recovery.
+              </p>
+
+              <p className="text-lg text-cream leading-relaxed font-serif">
+                Surpassing prior resources in scale, anatomical detail, and cultural specificity, F2F documents Bharatanatyam at unprecedented granularity and releases processed 3D features to catalyze research in motion analysis, generation, and cultural preservation. As an initial exploration, we train a simple VAE-based transformer, showing that these fine-grained 3D features support learning of intricate spatiotemporal structure; we envision F2F as a foundation for Creative AI systems that learn from, generate, and help safeguard embodied knowledge of intangible cultural heritage.
+              </p>
+            </>
+
 
             {/* <div className="flex gap-4 mt-8">
               <Button
@@ -141,7 +135,7 @@ export function AboutSection() {
               loop
               muted
               playsInline
-              src="https://bharatnatyambucket.s3.us-east-1.amazonaws.com/example.mp4"/>
+              src="https://bharatnatyambucket.s3.us-east-1.amazonaws.com/example.mp4" />
 
 
             <video
@@ -154,7 +148,7 @@ export function AboutSection() {
             />
 
             <video
-               src="https://bharatnatyambucket.s3.us-east-1.amazonaws.com/example.mp4"
+              src="https://bharatnatyambucket.s3.us-east-1.amazonaws.com/example.mp4"
               className="rounded-lg shadow-lg w-full h-64 object-cover"
               autoPlay
               loop
