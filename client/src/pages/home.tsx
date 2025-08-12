@@ -8,18 +8,24 @@ import { Footer } from "@/components/footer";
 import { CulturalElementGrid } from "@/components/cultural-components";
 import { PipelineSection } from "@/components/pipeline";
 import { AICoDanceSection } from "@/components/AICoDanceSection";
+import { F2FDatasetSection } from "@/components/F2FDataset";
+import { F2F3DSection } from "@/components/F2F_3D";
+import App from "@/App";
+import { Appearance_Retarget } from "@/components/Appreance_Retarget";
+import { OtherUseCasesSection } from "@/components/Other_use_Cases";
 
 export default function Home() {
   return (
     <div className="min-h-screen bg-white">
       <Navigation />
       <AboutSection />
-      <AICoDanceSection/>
+      <F2FDatasetSection/>
+      <F2F3DSection/>
       <PipelineSection/>
-      {/* <HeroSection /> */}
-      {/* <CulturalElementGrid/> */}
+      <AICoDanceSection/>
       <PoseLibrary />
-      {/* <TeamSection /> */}
+      <Appearance_Retarget/>
+      <OtherUseCasesSection/>
       <Footer />
     </div>
   );

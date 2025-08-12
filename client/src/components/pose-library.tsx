@@ -145,7 +145,7 @@ export function PoseLibrary() {
             className="text-2xl md:text-4xl font-serif font-bold temple-gold mb-10"
             variants={fadeInUp}
           >
-            Interactive Pose Library
+            Interactive Adavus Library
           </motion.h2>
           <motion.p
             className="text-lg text-[#5f4330]/80 mb-8 max-w-2xl mx-auto font-serif"
