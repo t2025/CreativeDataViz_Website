@@ -19,8 +19,15 @@ export function Navigation() {
 
   const navItems = [
     { href: "#about", label: "About" },
-    { href: "#ai-co-dance", label: "Co-Dancing" },
-    { href: "#pose-library", label: "Pose Library" },
+    { href: "#f2f-dataset", label: "F2F Dataset" },
+    { href: "#f2f-3d", label: "F2F 3D" },
+    { href: "#pipeline", label: "Pipeline" },
+    { href: "#ai-co-dance", label: "AI Co-Dance" },
+    { href: "#pose-library", label: "Adavus Library" },
+    { href: "#appearance-retarget", label: "Appearance Retargeting" },
+    { href: "#other-use-cases", label: "Other Use Cases" },
+    {href: "#contact-button", label: "Access to Data" },
+    
   
   ];
 

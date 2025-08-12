@@ -142,7 +142,7 @@ export function OtherUseCasesSection() {
           whileInView="animate"
           viewport={{ once: true }}
         >
-          <a
+          <a id="contact-button"
             href="mailto:asudarsh@buffalo.edu,lipishan@buffalo.edu,tanviran@buffalo.edu,inwogu@buffalo.edu,rohini@buffalo.edu?subject=Request%20for%20Access%20to%20Data"
             className="inline-block bg-[#9c1c1c] hover:bg-[#7a1616] text-white font-serif px-6 py-3 rounded-lg shadow-md transition-colors duration-200"
           >
