@@ -40,7 +40,7 @@ export function Appearance_Retarget() {
           <div className="text-center">
             <p className="text-lg text-[#9c1c1c] mb-2 font-semibold font-serif">Mesh View 01</p>
             <video
-              src="https://your-bucket/f2f_mesh_01.mp4"
+              src="https://bharatnatyambucket.s3.us-east-1.amazonaws.com/chunk%3D002-ref_guy_yo_chunk_001.mp4"
               autoPlay
               loop
               muted
@@ -51,7 +51,7 @@ export function Appearance_Retarget() {
           <div className="text-center">
             <p className="text-lg text-[#9c1c1c] mb-2 font-semibold font-serif">Mesh View 02</p>
             <video
-              src="https://your-bucket/f2f_mesh_02.mp4"
+              src="https://bharatnatyambucket.s3.us-east-1.amazonaws.com/chunk%3D002-ref_pop_chunk_002.mp4"
               autoPlay
               loop
               muted

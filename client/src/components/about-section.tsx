@@ -139,7 +139,7 @@ export function AboutSection() {
 
 
             <video
-              src="https://bharatnatyambucket.s3.us-east-1.amazonaws.com/chunk%3D002-ref_guy_yo_chunk_001.mp4"
+              src="https://bharatnatyambucket.s3.us-east-1.amazonaws.com/chunk_000+(1).mp4"
               className="rounded-lg shadow-lg w-full h-64 object-cover"
               autoPlay
               loop
@@ -157,7 +157,7 @@ export function AboutSection() {
             />
 
             <video
-              src="https://bharatnatyambucket.s3.us-east-1.amazonaws.com/chunk%3D002-ref_pop_chunk_002.mp4"
+              src="https://bharatnatyambucket.s3.us-east-1.amazonaws.com/cs_map_smplx.mp4"
               className="rounded-lg shadow-lg w-full h-64 object-cover"
               autoPlay
               loop
