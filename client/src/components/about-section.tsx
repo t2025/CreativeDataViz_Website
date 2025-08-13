@@ -57,7 +57,7 @@ export function AboutSection() {
             className="text-lg md:text-2xl temple-gold mb-4 font-serif"
             variants={fadeInUp}
           >
-            A Unified 3D Dataset for Indian Classical Dance Form
+            Capturing Fine-Grained 3D Motion Representations in Expressive Dance
           </motion.p>
 
           {/* <motion.p

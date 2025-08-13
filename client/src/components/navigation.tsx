@@ -26,6 +26,7 @@ export function Navigation() {
     { href: "#pose-library", label: "Adavus Library" },
     { href: "#appearance-retarget", label: "Appearance Retargeting" },
     { href: "#other-use-cases", label: "Other Use Cases" },
+    {href: "#contact-button", label: "Access to Data" },
     
   
   ];
