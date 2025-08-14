@@ -26,8 +26,8 @@ const poseData: InsertDancePose[] = [
     description:
       "A foundational Bharatanatyam adavu characterized by sharp stamping and forceful hand gestures, symbolizing strength and determination.",
     videoUrls: [
-      "https://bharatnatyambucket.s3.us-east-1.amazonaws.com/Natt_adavu.mp4",
-      "https://bharatnatyambucket.s3.us-east-1.amazonaws.com/ref_smpl.mp4",
+      "https://bharatnatyambucket.s3.us-east-1.amazonaws.com/KattiAdavu.mp4",
+      "https://bharatnatyambucket.s3.us-east-1.amazonaws.com/chunk%3D001-ref_bluedancer_chunk_001katti.mp4",
     ],
     symbolism:
       "Represents clenched strength or gripping force, often used to portray valor or intense emotion.",
@@ -75,7 +75,7 @@ const poseData: InsertDancePose[] = [
       "A graceful Bharatanatyam adavu that involves sweeping, gliding movements across the stage, symbolizing flow and expansion.",
     videoUrls: [
       "https://bharatnatyambucket.s3.us-east-1.amazonaws.com/ParavalAdavu1.1.mp4",
-      "https://bharatnatyambucket.s3.us-east-1.amazonaws.com/ref_smpl.mp4",
+      "https://bharatnatyambucket.s3.us-east-1.amazonaws.com/blue_chunk_paraval_Adavu.mp4",
     ],
     symbolism:
       "Represents spreading, flying, or expansive movement—used to convey transitions, joy, or grandeur.",
@@ -87,7 +87,7 @@ const poseData: InsertDancePose[] = [
       "A sliding movement-based Bharatanatyam adavu where the feet glide across the floor with fluidity and grace, often accompanied by soft arm gestures.",
     videoUrls: [
       "https://bharatnatyambucket.s3.us-east-1.amazonaws.com/Sarukkal_Adavu.mp4",
-      "https://bharatnatyambucket.s3.us-east-1.amazonaws.com/ref_smpl.mp4",
+      "https://bharatnatyambucket.s3.us-east-1.amazonaws.com/chunk%3D000-ref_bluedancer_chunk_000saru.mp4",
     ],
     symbolism:
       "Symbolizes smooth transition, stealth, or elegance—used to portray gliding motions, delicate approaches, or emotional subtlety.",
