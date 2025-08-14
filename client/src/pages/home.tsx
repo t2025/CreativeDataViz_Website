@@ -24,7 +24,7 @@ export default function Home() {
       <PipelineSection/>
       <AICoDanceSection/>
       <PoseLibrary />
-      <Appearance_Retarget/>
+      {/* <Appearance_Retarget/> */}
       <OtherUseCasesSection/>
       <Footer />
     </div>
