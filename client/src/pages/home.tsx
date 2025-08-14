@@ -13,6 +13,8 @@ import { F2F3DSection } from "@/components/F2F_3D";
 import App from "@/App";
 import { Appearance_Retarget } from "@/components/Appreance_Retarget";
 import { OtherUseCasesSection } from "@/components/Other_use_Cases";
+import { DataAccessSection } from "@/components/Data_Access";
+
 
 export default function Home() {
   return (
@@ -26,6 +28,7 @@ export default function Home() {
       <PoseLibrary />
       {/* <Appearance_Retarget/> */}
       <OtherUseCasesSection/>
+      <DataAccessSection/>
       <Footer />
     </div>
   );

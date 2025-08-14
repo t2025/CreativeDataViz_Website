@@ -92,7 +92,7 @@ export class MemStorage implements IStorage {
 {
   name: "Katti Adavu",
   description: "A foundational Bharatanatyam adavu characterized by sharp stamping and forceful hand gestures, symbolizing strength and determination.",
-  videoUrls: ["https://bharatnatyambucket.s3.us-east-1.amazonaws.com/Natt_adavu.mp4", "https://bharatnatyambucket.s3.us-east-1.amazonaws.com/ref_smpl.mp4"],
+  videoUrls: ["https://bharatnatyambucket.s3.us-east-1.amazonaws.com/KattiAdavu.mp4", "https://bharatnatyambucket.s3.us-east-1.amazonaws.com/ref_smpl.mp4"],
   symbolism: "Represents clenched strength or gripping force, often used to portray valor or intense emotion.",
   mudraType: "Mushti"
 },
@@ -106,13 +106,13 @@ export class MemStorage implements IStorage {
       {
   name: "Mandi Adavu",
   description: "A dynamic Bharatanatyam adavu performed close to the ground with bent knees or squatting jumps, demanding agility and strength.",
-  videoUrls: ["https://bharatnatyambucket.s3.us-east-1.amazonaws.com/Mandi_Adavu.mp4", "https://bharatnatyambucket.s3.us-east-1.amazonaws.com/ref_smpl.mp4"],
+  videoUrls: ["https://bharatnatyambucket.s3.us-east-1.amazonaws.com/Mandi_Adavu.mp4", "https://bharatnatyambucket.s3.us-east-1.amazonaws.com/chunk%3D000-ref_bluedancer_chunk_000.mp4"],
   symbolism: "Signifies humility, surrender, or moments of intense emotion; reflects grounded energy and devotion.",
   mudraType: "Varying (commonly Ardhachandra, Tripataka or Katakamukha)"
 },{
   name: "Natta Adavu",
   description: "A foundational Bharatanatyam adavu characterized by stretched leg movements and striking the floor with the heel, synchronized with elegant arm positions.",
-  videoUrls: ["https://bharatnatyambucket.s3.us-east-1.amazonaws.com/Natt_adavu.mp4", "https://bharatnatyambucket.s3.us-east-1.amazonaws.com/ref_smpl.mp4"],
+  videoUrls: ["https://bharatnatyambucket.s3.us-east-1.amazonaws.com/Natt_adavu.mp4", "https://bharatnatyambucket.s3.us-east-1.amazonaws.com/chunk%3D002-ref_bluedancer_chunk_002.mp4"],
   symbolism: "Symbolizes grace, rhythm, and control—used extensively in pure dance sequences to establish tempo and posture.",
   mudraType: "Katakamukha"
 },

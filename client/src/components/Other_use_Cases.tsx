@@ -136,7 +136,7 @@ export function OtherUseCasesSection() {
         </motion.p>
 
         {/* Contact Button */}
-        <motion.div
+        {/* <motion.div
           className="text-center mt-6"
           variants={fadeInUp}
           initial="initial"
@@ -149,7 +149,7 @@ export function OtherUseCasesSection() {
           >
             Access to Data
           </a>
-        </motion.div>
+        </motion.div> */}
       </div>
     </section>
   );
