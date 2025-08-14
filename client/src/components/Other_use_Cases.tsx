@@ -42,7 +42,7 @@ export function OtherUseCasesSection() {
               K-pop Style Avatar
             </p>
             <video
-              src="https://your-bucket/kpop_avatar_01.mp4"
+              src="https://bharatnatyambucket.s3.us-east-1.amazonaws.com/chunk%3D002-ref_pop_chunk_002.mp4"
               autoPlay
               loop
               muted
@@ -70,7 +70,7 @@ export function OtherUseCasesSection() {
               Anime Girl Rig
             </p>
             <video
-              src="https://your-bucket/anime_avatar_01.mp4"
+              src="https://bharatnatyambucket.s3.us-east-1.amazonaws.com/chunk%3D002-ref_anime_chunk_002.mp4"
               autoPlay
               loop
               muted
@@ -113,9 +113,10 @@ export function OtherUseCasesSection() {
               Realistic Human Avatar
             </p>
             <video
-              src="https://your-bucket/realistic_avatar_01.mp4"
+              src="https://bharatnatyambucket.s3.us-east-1.amazonaws.com/chunk%3D003-ref_realman_chunk_003.mp4"
               autoPlay
               loop
+              
               muted
               playsInline
               className="w-full h-40 md:h-56 object-cover rounded-lg shadow-md mx-auto bg-black"

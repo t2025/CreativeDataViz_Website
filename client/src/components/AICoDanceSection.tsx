@@ -38,7 +38,7 @@ export function AICoDanceSection() {
           <div className="text-center">
             <p className="text-lg text-[#9c1c1c] mb-2 font-semibold font-serif">Mesh Animation</p>
             <video
-              src="https://bharatnatyambucket.s3.us-east-1.amazonaws.com/example.mp4"
+              src="https://bharatnatyambucket.s3.us-east-1.amazonaws.com/sony7822_part17_chunk000.mp4"
               autoPlay
               loop
               muted
@@ -50,7 +50,7 @@ export function AICoDanceSection() {
           <div className="text-center">
             <p className="text-lg text-[#9c1c1c] mb-2 font-semibold font-serif">Our Output</p>
             <video
-              src="https://bharatnatyambucket.s3.us-east-1.amazonaws.com/ref_smpl.mp4"
+              src="https://bharatnatyambucket.s3.us-east-1.amazonaws.com/chunk%3D000-realis_ref_reddancer_chunk_000.mp4"
               autoPlay
               loop
               muted
@@ -72,7 +72,7 @@ export function AICoDanceSection() {
           {/* Tile 5 */}
           <div className="text-center">
             <video
-              src="https://bharatnatyambucket.s3.us-east-1.amazonaws.com/example.mp4"
+              src="https://bharatnatyambucket.s3.us-east-1.amazonaws.com/Sachid_chunk_000.mp4"
               autoPlay
               loop
               muted
@@ -83,7 +83,7 @@ export function AICoDanceSection() {
           {/* Tile 6 */}
           <div className="text-center">
             <video
-              src="https://bharatnatyambucket.s3.us-east-1.amazonaws.com/ref_smpl.mp4"
+              src="https://bharatnatyambucket.s3.us-east-1.amazonaws.com/chunk%3D000-ref_cartoondancerman_chunk_000.mp4"
               autoPlay
               loop
               muted
@@ -105,7 +105,7 @@ export function AICoDanceSection() {
           {/* Tile 8 */}
           <div className="text-center">
             <video
-              src="https://bharatnatyambucket.s3.us-east-1.amazonaws.com/example.mp4"
+              src="https://bharatnatyambucket.s3.us-east-1.amazonaws.com/Purwai_chunk_003.mp4"
               autoPlay
               loop
               muted
@@ -116,7 +116,7 @@ export function AICoDanceSection() {
           {/* Tile 9 */}
           <div className="text-center">
             <video
-              src="https://bharatnatyambucket.s3.us-east-1.amazonaws.com/ref_smpl.mp4"
+              src="https://bharatnatyambucket.s3.us-east-1.amazonaws.com/chunk%3D003-realis_ref_ankitha1_chunk_003.mp4"
               autoPlay
               loop
               muted

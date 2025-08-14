@@ -22,7 +22,7 @@ export function AboutSection() {
     const video2 = syncedVideo2Ref.current;
 
     if (video1 && video2) {
-      video1.playbackRate = 1.25;
+      video1.playbackRate = 1.0;
       video2.playbackRate = 1.0;
 
       const playIfReady = () => {

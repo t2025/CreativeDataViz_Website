@@ -1,7 +1,30 @@
-// components/F2F3DSection.tsx
-
 import { motion } from "framer-motion";
 import { fadeInUp } from "@/lib/animations";
+
+const meshVideos = [
+  { title: "Mesh View 01", src: "https://your-bucket/f2f_mesh_01.mp4" },
+  { title: "Mesh View 02", src: "https://your-bucket/f2f_mesh_02.mp4" },
+  { title: "Mesh View 03", src: "https://your-bucket/f2f_mesh_03.mp4" },
+  { title: "Mesh View 04", src: "https://your-bucket/f2f_mesh_04.mp4" },
+  { title: "Mesh View 05", src: "https://your-bucket/f2f_mesh_05.mp4" },
+  { title: "Mesh View 06", src: "https://your-bucket/f2f_mesh_06.mp4" },
+];
+
+function MeshVideoTile({ title, src }: { title: string; src: string }) {
+  return (
+    <div className="text-center">
+      <p className="text-base text-[#9c1c1c] mb-2 font-semibold font-serif">{title}</p>
+      <video
+        src={src}
+        autoPlay
+        loop
+        muted
+        playsInline
+        className="w-full h-[14rem] md:h-[18rem] object-cover rounded-lg shadow-md mx-auto bg-black"
+      />
+    </div>
+  );
+}
 
 export function F2F3DSection() {
   return (
@@ -36,75 +59,9 @@ export function F2F3DSection() {
           whileInView="animate"
           viewport={{ once: true }}
         >
-          {/* Row 1 */}
-          <div className="text-center">
-            <p className="text-lg text-[#9c1c1c] mb-2 font-semibold font-serif">Mesh View 01</p>
-            <video
-              src="https://your-bucket/f2f_mesh_01.mp4"
-              autoPlay
-              loop
-              muted
-              playsInline
-              className="w-full h-[22rem] md:h-[30rem] object-cover rounded-lg shadow-md mx-auto bg-black"
-            />
-          </div>
-          <div className="text-center">
-            <p className="text-lg text-[#9c1c1c] mb-2 font-semibold font-serif">Mesh View 02</p>
-            <video
-              src="https://your-bucket/f2f_mesh_02.mp4"
-              autoPlay
-              loop
-              muted
-              playsInline
-              className="w-full h-[22rem] md:h-[30rem] object-cover rounded-lg shadow-md mx-auto bg-black"
-            />
-          </div>
-          <div className="text-center">
-            <p className="text-lg text-[#9c1c1c] mb-2 font-semibold font-serif">Mesh View 03</p>
-            <video
-              src="https://your-bucket/f2f_mesh_03.mp4"
-              autoPlay
-              loop
-              muted
-              playsInline
-              className="w-full h-[22rem] md:h-[30rem] object-cover rounded-lg shadow-md mx-auto bg-black"
-            />
-          </div>
-
-          {/* Row 2 */}
-          <div className="text-center">
-            <p className="text-lg text-[#9c1c1c] mb-2 font-semibold font-serif">Mesh View 04</p>
-            <video
-              src="https://your-bucket/f2f_mesh_04.mp4"
-              autoPlay
-              loop
-              muted
-              playsInline
-              className="w-full h-[22rem] md:h-[30rem] object-cover rounded-lg shadow-md mx-auto bg-black"
-            />
-          </div>
-          <div className="text-center">
-            <p className="text-lg text-[#9c1c1c] mb-2 font-semibold font-serif">Mesh View 05</p>
-            <video
-              src="https://your-bucket/f2f_mesh_05.mp4"
-              autoPlay
-              loop
-              muted
-              playsInline
-              className="w-full h-[22rem] md:h-[30rem] object-cover rounded-lg shadow-md mx-auto bg-black"
-            />
-          </div>
-          <div className="text-center">
-            <p className="text-lg text-[#9c1c1c] mb-2 font-semibold font-serif">Mesh View 06</p>
-            <video
-              src="https://your-bucket/f2f_mesh_06.mp4"
-              autoPlay
-              loop
-              muted
-              playsInline
-              className="w-full h-[22rem] md:h-[30rem] object-cover rounded-lg shadow-md mx-auto bg-black"
-            />
-          </div>
+          {meshVideos.map((video, index) => (
+            <MeshVideoTile key={index} title={video.title} src={video.src} />
+          ))}
         </motion.div>
 
         <motion.p
