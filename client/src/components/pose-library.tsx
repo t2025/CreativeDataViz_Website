@@ -74,7 +74,7 @@ const poseData: InsertDancePose[] = [
     description:
       "A graceful Bharatanatyam adavu that involves sweeping, gliding movements across the stage, symbolizing flow and expansion.",
     videoUrls: [
-      "https://bharatnatyambucket.s3.us-east-1.amazonaws.com/ParavalAdavu1.1.mp4",
+      "https://bharatnatyambucket.s3.us-east-1.amazonaws.com/ParavalAdavu1.2_part0.mp4",
       "https://bharatnatyambucket.s3.us-east-1.amazonaws.com/blue_chunk_paraval_Adavu.mp4",
     ],
     symbolism:

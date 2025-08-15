@@ -119,7 +119,7 @@ export class MemStorage implements IStorage {
       {
   name: "Paraval Adavu",
   description: "A graceful Bharatanatyam adavu that involves sweeping, gliding movements across the stage, symbolizing flow and expansion.",
-  videoUrls: ["https://bharatnatyambucket.s3.us-east-1.amazonaws.com/ParavalAdavu1.1.mp4", "https://bharatnatyambucket.s3.us-east-1.amazonaws.com/ref_smpl.mp4"],
+  videoUrls: ["https://bharatnatyambucket.s3.us-east-1.amazonaws.com/ParavalAdavu1.2_part0.mp4", "https://bharatnatyambucket.s3.us-east-1.amazonaws.com/ref_smpl.mp4"],
   symbolism: "Represents spreading, flying, or expansive movement—used to convey transitions, joy, or grandeur.",
   mudraType: "Alapadma or Tripataka"
 },
