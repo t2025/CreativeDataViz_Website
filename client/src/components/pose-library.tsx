@@ -39,7 +39,7 @@ const poseData: InsertDancePose[] = [
       "A complex sequence in Bharatanatyam that links multiple adavus into a rhythmic pattern, showcasing the dancer’s control, memory, and precision.",
     videoUrls: [
       "https://bharatnatyambucket.s3.us-east-1.amazonaws.com/Korvai_Adavu.mp4",
-      "https://bharatnatyambucket.s3.us-east-1.amazonaws.com/ref_smpl.mp4",
+      "https://bharatnatyambucket.s3.us-east-1.amazonaws.com/chunk%3D002-ref_bluedancer_chunk_002.mp4",
     ],
     symbolism:
       "Represents intricacy and mastery; often used as a climactic highlight in pure dance segments.",
@@ -51,7 +51,7 @@ const poseData: InsertDancePose[] = [
       "A dynamic Bharatanatyam adavu performed close to the ground with bent knees or squatting jumps, demanding agility and strength.",
     videoUrls: [
       "https://bharatnatyambucket.s3.us-east-1.amazonaws.com/Mandi_Adavu.mp4",
-      "https://bharatnatyambucket.s3.us-east-1.amazonaws.com/ref_smpl.mp4",
+      "https://bharatnatyambucket.s3.us-east-1.amazonaws.com/chunk%3D000-ref_bluedancer_chunk_000.mp4",
     ],
     symbolism:
       "Signifies humility, surrender, or moments of intense emotion; reflects grounded energy and devotion.",
@@ -63,7 +63,7 @@ const poseData: InsertDancePose[] = [
       "A foundational Bharatanatyam adavu characterized by stretched leg movements and striking the floor with the heel, synchronized with elegant arm positions.",
     videoUrls: [
       "https://bharatnatyambucket.s3.us-east-1.amazonaws.com/Natt_adavu.mp4",
-      "https://bharatnatyambucket.s3.us-east-1.amazonaws.com/ref_smpl.mp4",
+      "https://bharatnatyambucket.s3.us-east-1.amazonaws.com/chunk%3D001-ref_bluedancer_chunk_001.mp4",
     ],
     symbolism:
       "Symbolizes grace, rhythm, and control—used extensively in pure dance sequences to establish tempo and posture.",

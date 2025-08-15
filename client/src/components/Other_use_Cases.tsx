@@ -1,5 +1,4 @@
 // components/OtherUseCasesSection.tsx
-
 import { motion } from "framer-motion";
 import { fadeInUp } from "@/lib/animations";
 
@@ -30,98 +29,52 @@ export function OtherUseCasesSection() {
         </motion.p>
 
         <motion.div
-          className="grid md:grid-cols-3 gap-6 items-start justify-center"
+          className="grid grid-cols-3 gap-6"
           variants={fadeInUp}
           initial="initial"
           whileInView="animate"
           viewport={{ once: true }}
         >
-          {/* Row 1 */}
-          <div className="text-center">
-            <p className="text-sm md:text-base text-[#9c1c1c] mb-2 font-semibold font-serif">
-              K-pop Style Avatar
-            </p>
-            <video
-              src="https://bharatnatyambucket.s3.us-east-1.amazonaws.com/chunk%3D002-ref_pop_chunk_002.mp4"
-              autoPlay
-              loop
-              muted
-              playsInline
-              className="w-full h-40 md:h-56 object-cover rounded-lg shadow-md mx-auto bg-black"
-            />
-          </div>
-
-          <div className="text-center">
-            <p className="text-sm md:text-base text-[#9c1c1c] mb-2 font-semibold font-serif">
-              Stylized Toon (Sponge-inspired)
-            </p>
-            <video
-              src="https://your-bucket/sponge_style_01.mp4"
-              autoPlay
-              loop
-              muted
-              playsInline
-              className="w-full h-40 md:h-56 object-cover rounded-lg shadow-md mx-auto bg-black"
-            />
-          </div>
-
-          <div className="text-center">
-            <p className="text-sm md:text-base text-[#9c1c1c] mb-2 font-semibold font-serif">
-              Anime Girl Rig
-            </p>
-            <video
-              src="https://bharatnatyambucket.s3.us-east-1.amazonaws.com/chunk%3D002-ref_anime_chunk_002.mp4"
-              autoPlay
-              loop
-              muted
-              playsInline
-              className="w-full h-40 md:h-56 object-cover rounded-lg shadow-md mx-auto bg-black"
-            />
-          </div>
-
-          {/* Row 2 */}
-          <div className="text-center">
-            <p className="text-sm md:text-base text-[#9c1c1c] mb-2 font-semibold font-serif">
-              Low-Poly Character
-            </p>
-            <video
-              src="https://your-bucket/lowpoly_avatar_01.mp4"
-              autoPlay
-              loop
-              muted
-              playsInline
-              className="w-full h-40 md:h-56 object-cover rounded-lg shadow-md mx-auto bg-black"
-            />
-          </div>
-
-          <div className="text-center">
-            <p className="text-sm md:text-base text-[#9c1c1c] mb-2 font-semibold font-serif">
-              Cartoon Mascot
-            </p>
-            <video
-              src="https://your-bucket/cartoon_avatar_01.mp4"
-              autoPlay
-              loop
-              muted
-              playsInline
-              className="w-full h-40 md:h-56 object-cover rounded-lg shadow-md mx-auto bg-black"
-            />
-          </div>
-
-          <div className="text-center">
-            <p className="text-sm md:text-base text-[#9c1c1c] mb-2 font-semibold font-serif">
-              Realistic Human Avatar
-            </p>
-            <video
-              src="https://bharatnatyambucket.s3.us-east-1.amazonaws.com/chunk%3D003-ref_realman_chunk_003.mp4"
-              autoPlay
-              loop
-              
-              muted
-              playsInline
-              className="w-full h-40 md:h-56 object-cover rounded-lg shadow-md mx-auto bg-black"
-            />
-          </div>
+          {[
+            {
+              label: "K-pop Style Avatar",
+              src: "https://bharatnatyambucket.s3.us-east-1.amazonaws.com/chunk%3D002-ref_pop_chunk_002.mp4",
+            },
+            {
+              label: "Disney Moanna",
+              src: "https://bharatnatyambucket.s3.us-east-1.amazonaws.com/chunk%3D000-ref_moana_chunk_000.mp4",
+            },
+            {
+              label: "Anime Girl Rig",
+              src: "https://bharatnatyambucket.s3.us-east-1.amazonaws.com/chunk%3D002-ref_anime_chunk_002.mp4",
+            },
+            {
+              label: "Low-Poly Character",
+              src: "https://bharatnatyambucket.s3.us-east-1.amazonaws.com/chunk%3D002-ref_back_swan_nat_port_chunk_002.mp4",
+            },
+            {
+              label: "Cartoon Mascot",
+              src: "https://your-bucket/cartoon_avatar_01.mp4",
+            },
+            {
+              label: "Realistic Human Avatar",
+              src: "https://bharatnatyambucket.s3.us-east-1.amazonaws.com/chunk%3D003-ref_realman_chunk_003.mp4",
+            },
+          ].map((item, i) => (
+            <div className="text-center" key={i}>
+              <p className="text-sm md:text-base text-[#9c1c1c] mb-2 font-semibold font-serif">
+                {item.label}
+              </p>
+              <video
+                src={item.src}
+                autoPlay
+                loop
+                muted
+                playsInline
+                className="w-full aspect-square object-cover rounded-lg shadow-md mx-auto bg-black"
+              />
+            </div>
+          ))}
         </motion.div>
 
         <motion.p
@@ -134,22 +87,6 @@ export function OtherUseCasesSection() {
           These lightweight previews demonstrate cross-avatar generalization: the same Bharatanatyam
           sequence can be mapped to heterogeneous rigs while preserving rhythmic structure and expressivity.
         </motion.p>
-
-        {/* Contact Button */}
-        {/* <motion.div
-          className="text-center mt-6"
-          variants={fadeInUp}
-          initial="initial"
-          whileInView="animate"
-          viewport={{ once: true }}
-        >
-          <a id="contact-button"
-            href="mailto:asudarsh@buffalo.edu,lipishan@buffalo.edu,tanviran@buffalo.edu,inwogu@buffalo.edu,rohini@buffalo.edu?subject=Request%20for%20Access%20to%20Data"
-            className="inline-block bg-[#9c1c1c] hover:bg-[#7a1616] text-white font-serif px-6 py-3 rounded-lg shadow-md transition-colors duration-200"
-          >
-            Access to Data
-          </a>
-        </motion.div> */}
       </div>
     </section>
   );

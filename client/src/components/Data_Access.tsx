@@ -13,27 +13,19 @@ export function DataAccessSection() {
           initial="initial"
           animate="animate"
         >
-          {/* Match AboutSection heading: text-5xl md:text-7xl, font-serif, gradient-text */}
-           <motion.h2
-          className="text-2xl md:text-4xl font-serif font-bold temple-gold mb-10 text-center"
-          variants={fadeInUp}
-          initial="initial"
-          whileInView="animate"
-          viewport={{ once: true }}
-        >
+          <motion.h2
+            className="text-2xl md:text-4xl font-serif font-bold temple-gold mb-10 text-center"
+            variants={fadeInUp}
+          >
             Data Access
           </motion.h2>
 
-          {/* Match AboutSection subline: text-lg md:text-2xl, same maroon color */}
-          <motion.p
-          className="text-center text-lg text-cream font-serif leading-relaxed max-w-4xl mx-auto mb-12"
-          variants={fadeInUp}
-          initial="initial"
-          whileInView="animate"
-          viewport={{ once: true }}
-        >
+          {/* <motion.p
+            className="text-center text-lg text-cream font-serif leading-relaxed max-w-4xl mx-auto mb-12"
+            variants={fadeInUp}
+          >
             For complete access to our comprehensive dataset and additional resources
-          </motion.p>
+          </motion.p> */}
         </motion.div>
 
         {/* Body */}
@@ -44,41 +36,18 @@ export function DataAccessSection() {
           whileInView="animate"
           viewport={{ once: true }}
         >
-          {/* Match paragraph style from AboutSection body: text-lg, text-cream, font-serif */}
           <motion.p
-          className="text-center text-lg text-cream font-serif leading-relaxed max-w-4xl mx-auto mb-12"
-          variants={fadeInUp}
-          initial="initial"
-          whileInView="animate"
-          viewport={{ once: true }}
-        >
-            Our team will respond to your inquiry within 2–3 business days and provide
-            detailed information about data access procedures and requirements.
-          </motion.p>
-
-          {/* Contact block */}
-          <motion.div
-            className="grid gap-4 sm:grid-cols-2"
+            className="text-center text-lg text-cream font-serif leading-relaxed max-w-4xl mx-auto mb-12"
             variants={fadeInUp}
           >
+            To access our data and for any other queries, please contact{" "}
             <a
-              href="mailto:data.access@creativedataviz.com"
-              className="block text-center rounded-lg border border-neutral-200 bg-white p-6 shadow-md hover:border-temple-gold transition-colors"
+              href="mailto:asudarshan@buffalo.edu"
+              className="text-temple-gold underline hover:text-temple-gold/80 transition-colors"
             >
-              <span className="text-lg font-serif text-cream">
-                rohini@buffalo.edu
-              </span>
-            </a>
-
-            <a
-              href="mailto:datasets@creativedataviz.com"
-              className="block text-center rounded-lg border border-neutral-200 bg-white p-6 shadow-md hover:border-temple-gold transition-colors"
-            >
-              <span className="text-lg font-serif text-cream">
-                asudarsh@buffal.edu
-              </span>
-            </a>
-          </motion.div>
+              here
+            </a>.
+          </motion.p>
         </motion.div>
       </div>
     </section>
