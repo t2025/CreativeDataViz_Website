@@ -37,34 +37,30 @@ export function OtherUseCasesSection() {
         >
           {[
             {
-              label: "K-pop Style Avatar",
-              src: "https://bharatnatyambucket.s3.us-east-1.amazonaws.com/chunk%3D002-ref_pop_chunk_002.mp4",
-            },
-            {
-              label: "Disney Moanna",
-              src: "https://bharatnatyambucket.s3.us-east-1.amazonaws.com/chunk%3D000-ref_moana_chunk_000.mp4",
-            },
-            {
-              label: "Anime Girl Rig",
               src: "https://bharatnatyambucket.s3.us-east-1.amazonaws.com/chunk%3D002-ref_anime_chunk_002.mp4",
             },
-            {
-              label: "Back Swan Pose",
-              src: "https://bharatnatyambucket.s3.us-east-1.amazonaws.com/chunk%3D002-ref_back_swan_nat_port_chunk_002.mp4",
+             {
+              src: "https://bharatnatyambucket.s3.us-east-1.amazonaws.com/chunk%3D000-ref_moana_chunk_000.mp4",
             },
-            {
-              label: "Humanoid Robot",
-              src: "https://bharatnatyambucket.s3.us-east-1.amazonaws.com/chunk%3D003-ref_humanoid_chunk_003.mp4",
-            },
-            {
-              label: "Realistic Human Avatar",
+             {
               src: "https://bharatnatyambucket.s3.us-east-1.amazonaws.com/chunk%3D003-ref_realman_chunk_003.mp4",
             },
+            {
+              src: "https://bharatnatyambucket.s3.us-east-1.amazonaws.com/chunk%3D003-ref_humanoid_chunk_003.mp4",
+            },
+             {
+              src: "https://bharatnatyambucket.s3.us-east-1.amazonaws.com/chunk%3D002-ref_back_swan_nat_port_chunk_002.mp4",
+            },
+        
+            {
+              src: "https://bharatnatyambucket.s3.us-east-1.amazonaws.com/chunk%3D002-ref_pop_chunk_002.mp4",
+            } 
+           
           ].map((item, i) => (
             <div className="text-center" key={i}>
-              <p className="text-sm md:text-base text-[#9c1c1c] mb-2 font-semibold font-serif">
-                {item.label}
-              </p>
+              {/* <p className="text-sm md:text-base text-[#9c1c1c] mb-2 font-semibold font-serif"> */}
+                {/* {item.label} */}
+              {/* </p> */}
               <video
                 src={item.src}
                 autoPlay

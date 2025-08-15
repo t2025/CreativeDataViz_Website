@@ -24,7 +24,7 @@ export function Appearance_Retarget() {
           whileInView="animate"
           viewport={{ once: true }}
         >
-          This section showcases 3D mesh renderings from the FootWork2FrameWork (F2F) dataset.
+          This section showcases 3D mesh renderings from the Footwork2Framework (F2F) dataset.
           Each clip visualizes pose dynamics, skeletal motion, and mesh deformation aligned with rhythmic footwork,
           enabling deeper analysis of temporal structure, articulation, and style.
         </motion.p>

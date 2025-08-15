@@ -20,29 +20,16 @@ export function DataAccessSection() {
             Data Access
           </motion.h2>
 
-          {/* <motion.p
-            className="text-center text-lg text-cream font-serif leading-relaxed max-w-4xl mx-auto mb-12"
-            variants={fadeInUp}
-          >
-            For complete access to our comprehensive dataset and additional resources
-          </motion.p> */}
-        </motion.div>
-
-        {/* Body */}
-        <motion.div
-          className="max-w-3xl mx-auto"
-          variants={staggerContainer}
-          initial="initial"
-          whileInView="animate"
-          viewport={{ once: true }}
-        >
+          {/* Body */}
           <motion.p
             className="text-center text-lg text-cream font-serif leading-relaxed max-w-4xl mx-auto mb-12"
             variants={fadeInUp}
           >
-            To access our data and for any other queries, please contact{" "}
+            To request access to our data, please fill out the form {" "}
             <a
-              href="mailto:asudarshan@buffalo.edu"
+              href="https://docs.google.com/forms/d/YOUR_GOOGLE_FORM_ID/viewform"
+              target="_blank"
+              rel="noopener noreferrer"
               className="text-temple-gold underline hover:text-temple-gold/80 transition-colors"
             >
               here
