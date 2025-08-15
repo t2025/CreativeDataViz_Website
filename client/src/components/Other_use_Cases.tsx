@@ -49,12 +49,12 @@ export function OtherUseCasesSection() {
               src: "https://bharatnatyambucket.s3.us-east-1.amazonaws.com/chunk%3D002-ref_anime_chunk_002.mp4",
             },
             {
-              label: "Low-Poly Character",
+              label: "Back Swan Pose",
               src: "https://bharatnatyambucket.s3.us-east-1.amazonaws.com/chunk%3D002-ref_back_swan_nat_port_chunk_002.mp4",
             },
             {
-              label: "Cartoon Mascot",
-              src: "https://your-bucket/cartoon_avatar_01.mp4",
+              label: "Humanoid Robot",
+              src: "https://bharatnatyambucket.s3.us-east-1.amazonaws.com/chunk%3D003-ref_humanoid_chunk_003.mp4",
             },
             {
               label: "Realistic Human Avatar",
