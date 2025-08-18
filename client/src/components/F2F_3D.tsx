@@ -89,8 +89,10 @@ export function F2F3DSection() {
           whileInView="animate"
           viewport={{ once: true }}
         >
-          The 3D mesh views provide a compact representation of motion quality—ideal for sequence alignment,
-          pose tracking, and benchmarking mesh-based generation models on F2F.
+          These figures present our compositional motion-capture pipeline that augments full-body pose with fine-grained hand reconstruction. 
+          Overlaid 3D hand meshes accurately track subtle finger articulations central to Bharatanatyam mudras. 
+          Fusing local hand modules with the global body model yields temporally coherent, high-resolution full-body meshes. 
+          This representation supports sequence alignment, gesture recognition, and quantitative benchmarking on F2F.
         </motion.p>
       </div>
     </section>

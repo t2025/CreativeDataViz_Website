@@ -26,7 +26,7 @@ export function AICoDanceSection() {
           <div className="text-center">
             <p className="text-lg text-[#9c1c1c] mb-2 font-semibold font-serif">Human Performance</p>
             <video
-              src="https://bharatnatyambucket.s3.us-east-1.amazonaws.com/realis_ref_ankitha1_smpl+(1).mp4"
+              src="https://bharatnatyambucket.s3.us-east-1.amazonaws.com/Purawai+1+.mov"
               autoPlay
               loop
               muted
@@ -61,7 +61,7 @@ export function AICoDanceSection() {
           {/* Tile 4 */}
           <div className="text-center">
             <video
-              src="https://bharatnatyambucket.s3.us-east-1.amazonaws.com/realis_ref_ankitha1_smpl+(1).mp4"
+              src="https://bharatnatyambucket.s3.us-east-1.amazonaws.com/Sachhid_codance.mov"
               autoPlay
               loop
               muted
@@ -94,7 +94,7 @@ export function AICoDanceSection() {
           {/* Tile 7 */}
           <div className="text-center">
             <video
-              src="https://bharatnatyambucket.s3.us-east-1.amazonaws.com/realis_ref_ankitha1_smpl+(1).mp4"
+              src="https://bharatnatyambucket.s3.us-east-1.amazonaws.com/Purawai_1_codance+.mov"
               autoPlay
               loop
               muted
@@ -132,9 +132,10 @@ export function AICoDanceSection() {
           whileInView="animate"
           viewport={{ once: true }}
         >
-          This tri-frame view compares traditional human choreography with AI-driven mesh outputs and the stylized RealisDance rendering. The 9-tile layout provides a diverse visual narrative of AI and human co-creation across multiple samples.
+         Each row presents a tri-panel comparison of (i) reference human choreography, (ii) AI-driven mesh reconstruction, and (iii) the RealisDance stylized rendering. The 3×3 montage aggregates multiple samples, enabling side-by-side evaluation of temporal correspondence, kinematic fidelity, and stylistic consistency in human–AI co-creation.
         </motion.p>
       </div>
     </section>
   );
 }
+

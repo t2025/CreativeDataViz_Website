@@ -33,7 +33,7 @@ export function DataAccessSection() {
               className="text-temple-gold underline hover:text-temple-gold/80 transition-colors"
             >
               here
-            </a>.
+        </a>
           </motion.p>
         </motion.div>
       </div>

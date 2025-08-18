@@ -23,9 +23,7 @@ export function OtherUseCasesSection() {
           whileInView="animate"
           viewport={{ once: true }}
         >
-          Examples of Bharatanatyam motion retargeted to varied avatar styles—ranging from stylized
-          characters to pop-culture–inspired figures—illustrating portability of our motion
-          representations across appearance and rig domains.
+          Examples of Bharatanatyam motion retargeted to diverse avatar styles, from stylized characters to pop culture figures, demonstrate that our motion representation transfers across different appearances while preserving kinematic and rhythmic fidelity.
         </motion.p>
 
         <motion.div
@@ -80,8 +78,7 @@ export function OtherUseCasesSection() {
           whileInView="animate"
           viewport={{ once: true }}
         >
-          These lightweight previews demonstrate cross-avatar generalization: the same Bharatanatyam
-          sequence can be mapped to heterogeneous rigs while preserving rhythmic structure and expressivity.
+         These lightweight previews demonstrate generalization across avatars, showing that the same Bharatanatyam sequence transfers to diverse characters while preserving rhythmic structure and expressive detail.
         </motion.p>
       </div>
     </section>

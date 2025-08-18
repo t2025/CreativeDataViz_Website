@@ -148,10 +148,10 @@ export function PoseLibrary() {
             Interactive Adavus Library
           </motion.h2>
           <motion.p
-            className="text-lg text-[#5f4330]/80 mb-8 max-w-2xl mx-auto font-serif"
+            className="text-center text-lg text-cream font-serif leading-relaxed max-w-4xl mx-auto mb-12"
             variants={fadeInUp}
           >
-            Explore the fundamental positions and movements of Bharatanatyam
+            A curated, interactive corpus of foundational Bharatanatyam positions (sthānas) and movement units (adavus). Each entry pairs reference video with 3D mesh reconstructions and annotated keyframes to clarify rhythm, footwork, posture, and mudra articulation. The library supports systematic study, side-by-side comparison, and quantitative analysis of technique and style.
           </motion.p>
         </motion.div>
 
