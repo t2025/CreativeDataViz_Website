@@ -110,7 +110,7 @@ export function AboutSection() {
             </p>
 
             <p className="text-lg text-cream leading-relaxed font-serif">
-              We introduce Footwork2Framework (F2F)—the first large-scale 3D motion dataset for South Asian classical dance, focusing on Bharatanatyam. It comprises over 47,000 seconds of temporally aligned full-body and detailed hand mesh sequences reconstructed from high-resolution videos using state-of-the-art mesh recovery.
+              We introduce Footwork2Framework (F2F), the first large-scale 3D motion dataset for South Asian classical dance, focusing on Bharatanatyam. It comprises over 47,000 seconds of temporally aligned full-body and detailed hand mesh sequences reconstructed from high-resolution videos using state-of-the-art mesh recovery.
             </p>
 
             <p className="text-lg text-cream leading-relaxed font-serif">
@@ -121,7 +121,7 @@ export function AboutSection() {
           <motion.div className="space-y-2" variants={slideInRight}>
             {/* In-Studio Label */}
             <p className="text-xl text-center font-semibold font-serif mb-2" style={{ color: "#9c1c1c" }}>
-              In Studio Recordings
+              Custom Studio Recordings
             </p>
             <div className="grid grid-cols-2 gap-4">
               <video
