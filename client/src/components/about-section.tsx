@@ -92,7 +92,7 @@ export function AboutSection() {
             >
               Ankitha Sudarshan*, Lipisha Nitin Chaudhary*, Tanvi Ranga, Ifeoma Nwogu, Rohini Srihari
               <br />
-              University at Buffalo, State University of New York
+              <span className="italic">University at Buffalo, State University of New York</span>
             </motion.p>
           </motion.div>
         </motion.div>
