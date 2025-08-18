@@ -130,7 +130,7 @@ export function AboutSection() {
                 loop
                 muted
                 playsInline
-                src="https://bharatnatyambucket.s3.us-east-1.amazonaws.com/Purawai+1+.mov"
+                src="https://bharatnatyambucket.s3.us-east-1.amazonaws.com/Purawai_intro+.mov"
               />
               <video
                 className="rounded-lg shadow-lg w-full h-64 object-cover"

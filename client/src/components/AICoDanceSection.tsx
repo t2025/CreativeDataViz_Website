@@ -26,7 +26,7 @@ export function AICoDanceSection() {
           <div className="text-center">
             <p className="text-lg text-[#9c1c1c] mb-2 font-semibold font-serif">Human Performance</p>
             <video
-              src="https://bharatnatyambucket.s3.us-east-1.amazonaws.com/Purawai+1+.mov"
+              src="https://bharatnatyambucket.s3.us-east-1.amazonaws.com/Purawai_intro+.mov"
               autoPlay
               loop
               muted
