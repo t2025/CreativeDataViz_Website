@@ -27,7 +27,7 @@ export function DataAccessSection() {
           >
             To request access to our data, please fill out the form {" "}
             <a
-              href="https://docs.google.com/forms/d/YOUR_GOOGLE_FORM_ID/viewform"
+              href="https://forms.gle/zy2jK5JhJi1CtDH8A"
               target="_blank"
               rel="noopener noreferrer"
               className="text-temple-gold underline hover:text-temple-gold/80 transition-colors"
