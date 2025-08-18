@@ -2,18 +2,15 @@ import { motion } from "framer-motion";
 import { fadeInUp } from "@/lib/animations";
 
 const meshVideos = [
-  { title: "Mesh View 01", src: "https://your-bucket/f2f_mesh_01.mp4" },
-  { title: "Mesh View 02", src: "https://your-bucket/f2f_mesh_02.mp4" },
-  { title: "Mesh View 03", src: "https://your-bucket/f2f_mesh_03.mp4" },
-  { title: "Mesh View 04", src: "https://your-bucket/f2f_mesh_04.mp4" },
-  { title: "Mesh View 05", src: "https://your-bucket/f2f_mesh_05.mp4" },
-  { title: "Mesh View 06", src: "https://your-bucket/f2f_mesh_06.mp4" },
+  { title: "Mesh View 01", src: "https://bharatnatyambucket.s3.us-east-1.amazonaws.com/Arun1.mp4" },
+  { title: "Mesh View 02", src: "https://bharatnatyambucket.s3.us-east-1.amazonaws.com/Arun+1.mp4" },
+  { title: "Mesh View 03", src: "https://bharatnatyambucket.s3.us-east-1.amazonaws.com/Arun+1_black.mp4" },
 ];
 
 function MeshVideoTile({ title, src }: { title: string; src: string }) {
   return (
     <div className="text-center">
-      <p className="text-base text-[#9c1c1c] mb-2 font-semibold font-serif">{title}</p>
+      {/* <p className="text-base text-[#9c1c1c] mb-2 font-semibold font-serif">{title}</p> */}
       <video
         src={src}
         autoPlay
@@ -37,7 +34,7 @@ export function F2F3DSection() {
           whileInView="animate"
           viewport={{ once: true }}
         >
-          F2F 3D Mesh Visualizations
+          F2F-3D : 3D Motion Extraction for the Footwork2Framework Dataset
         </motion.h2>
 
         <motion.p
@@ -52,6 +49,7 @@ export function F2F3DSection() {
           enabling deeper analysis of temporal structure, articulation, and style.
         </motion.p>
 
+        {/* Video Grid */}
         <motion.div
           className="grid md:grid-cols-3 gap-8 items-start justify-center"
           variants={fadeInUp}
@@ -62,6 +60,26 @@ export function F2F3DSection() {
           {meshVideos.map((video, index) => (
             <MeshVideoTile key={index} title={video.title} src={video.src} />
           ))}
+        </motion.div>
+
+        {/* Two stacked images */}
+        <motion.div
+          className="flex flex-col gap-8 mt-12"
+          variants={fadeInUp}
+          initial="initial"
+          whileInView="animate"
+          viewport={{ once: true }}
+        >
+          <img
+            src="https://bharatnatyambucket.s3.us-east-1.amazonaws.com/F2F-3D.png"
+            alt="3D Mesh Image 1"
+            className="w-full rounded-lg shadow-md border border-gray-300"
+          />
+          <img
+            src="https://bharatnatyambucket.s3.us-east-1.amazonaws.com/F2F-3D_hands.png"
+            alt="3D Mesh Image 2"
+            className="w-full rounded-lg shadow-md border border-gray-300"
+          />
         </motion.div>
 
         <motion.p
